@@ -528,8 +528,8 @@ Internet-Draft            CAPPORT Architecture                March 2018
    other.
 
    The methods by which the components interact restrict the type of
-   information that may be used as an identifying charactertics.  This
-   section discusses the identifying charactersitics.
+   information that may be used as an identifying characteristics.  This
+   section discusses the identifying characteristics.
 
 3.1.  Identifiers
 
@@ -545,9 +545,9 @@ Internet-Draft            CAPPORT Architecture                March 2018
 3.2.  Recommended Properties
 
    The set of possible identifiers is quite large.  However, in order to
-   be considered a good identifer, an identifier SHOULD meet the
+   be considered a good identifier, an identifier SHOULD meet the
    following criteria.  Note that the optimal identifier will likely
-   change depending on the positino of the components in the network as
+   change depending on the position of the components in the network as
    well as the information available to them.  An identifier SHOULD:
 
    o  Uniquely Identify the User Equipment
