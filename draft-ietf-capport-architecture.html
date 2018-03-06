@@ -294,20 +294,31 @@ address {
 <link href="#rfc.section.2.4" rel="Chapter" title="2.4 Captive Portal Enforcement">
 <link href="#rfc.section.2.5" rel="Chapter" title="2.5 ICMP/ICMP6">
 <link href="#rfc.section.2.6" rel="Chapter" title="2.6 Component Diagram">
-<link href="#rfc.section.3" rel="Chapter" title="3 Solution Workflow">
-<link href="#rfc.section.3.1" rel="Chapter" title="3.1 Initial Connection">
-<link href="#rfc.section.3.2" rel="Chapter" title="3.2 Conditions Expire">
-<link href="#rfc.section.4" rel="Chapter" title="4 Acknowledgements">
-<link href="#rfc.section.5" rel="Chapter" title="5 IANA Considerations">
-<link href="#rfc.section.6" rel="Chapter" title="6 Security Considerations">
-<link href="#rfc.section.6.1" rel="Chapter" title="6.1 Trusting the Network">
-<link href="#rfc.section.6.2" rel="Chapter" title="6.2 Authenticated APIs">
-<link href="#rfc.section.6.3" rel="Chapter" title="6.3 Secure APIs">
-<link href="#rfc.section.6.4" rel="Chapter" title="6.4 Risk of Nuisance Captive Portal">
-<link href="#rfc.section.6.5" rel="Chapter" title="6.5 User Options">
-<link href="#rfc.references" rel="Chapter" title="7 References">
-<link href="#rfc.references.1" rel="Chapter" title="7.1 Normative References">
-<link href="#rfc.references.2" rel="Chapter" title="7.2 Informative References">
+<link href="#rfc.section.3" rel="Chapter" title="3 User Equipment Identity">
+<link href="#rfc.section.3.1" rel="Chapter" title="3.1 Identifiers">
+<link href="#rfc.section.3.2" rel="Chapter" title="3.2 Recommended Properties">
+<link href="#rfc.section.3.2.1" rel="Chapter" title="3.2.1 Uniquely Identify User Equipment">
+<link href="#rfc.section.3.2.2" rel="Chapter" title="3.2.2 Hard to Spoof">
+<link href="#rfc.section.3.2.3" rel="Chapter" title="3.2.3 Visible to the API">
+<link href="#rfc.section.3.2.4" rel="Chapter" title="3.2.4 Visible to the Enforcement Device">
+<link href="#rfc.section.3.3" rel="Chapter" title="3.3 Evaluating an Identifier">
+<link href="#rfc.section.3.4" rel="Chapter" title="3.4 Examples of an Identifier">
+<link href="#rfc.section.3.4.1" rel="Chapter" title="3.4.1 Physical Interface">
+<link href="#rfc.section.3.4.2" rel="Chapter" title="3.4.2 IP Address">
+<link href="#rfc.section.4" rel="Chapter" title="4 Solution Workflow">
+<link href="#rfc.section.4.1" rel="Chapter" title="4.1 Initial Connection">
+<link href="#rfc.section.4.2" rel="Chapter" title="4.2 Conditions Expire">
+<link href="#rfc.section.5" rel="Chapter" title="5 Acknowledgements">
+<link href="#rfc.section.6" rel="Chapter" title="6 IANA Considerations">
+<link href="#rfc.section.7" rel="Chapter" title="7 Security Considerations">
+<link href="#rfc.section.7.1" rel="Chapter" title="7.1 Trusting the Network">
+<link href="#rfc.section.7.2" rel="Chapter" title="7.2 Authenticated APIs">
+<link href="#rfc.section.7.3" rel="Chapter" title="7.3 Secure APIs">
+<link href="#rfc.section.7.4" rel="Chapter" title="7.4 Risk of Nuisance Captive Portal">
+<link href="#rfc.section.7.5" rel="Chapter" title="7.5 User Options">
+<link href="#rfc.references" rel="Chapter" title="8 References">
+<link href="#rfc.references.1" rel="Chapter" title="8.1 Normative References">
+<link href="#rfc.references.2" rel="Chapter" title="8.2 Informative References">
 <link href="#rfc.authors" rel="Chapter">
 
 
@@ -391,33 +402,55 @@ address {
 </li>
 <li>2.6.   <a href="#rfc.section.2.6">Component Diagram</a>
 </li>
-</ul><li>3.   <a href="#rfc.section.3">Solution Workflow</a>
+</ul><li>3.   <a href="#rfc.section.3">User Equipment Identity</a>
 </li>
-<ul><li>3.1.   <a href="#rfc.section.3.1">Initial Connection</a>
+<ul><li>3.1.   <a href="#rfc.section.3.1">Identifiers</a>
 </li>
-<li>3.2.   <a href="#rfc.section.3.2">Conditions Expire</a>
+<li>3.2.   <a href="#rfc.section.3.2">Recommended Properties</a>
 </li>
-</ul><li>4.   <a href="#rfc.section.4">Acknowledgements</a>
+<ul><li>3.2.1.   <a href="#rfc.section.3.2.1">Uniquely Identify User Equipment</a>
 </li>
-<li>5.   <a href="#rfc.section.5">IANA Considerations</a>
+<li>3.2.2.   <a href="#rfc.section.3.2.2">Hard to Spoof</a>
 </li>
-<li>6.   <a href="#rfc.section.6">Security Considerations</a>
+<li>3.2.3.   <a href="#rfc.section.3.2.3">Visible to the API</a>
 </li>
-<ul><li>6.1.   <a href="#rfc.section.6.1">Trusting the Network</a>
+<li>3.2.4.   <a href="#rfc.section.3.2.4">Visible to the Enforcement Device</a>
 </li>
-<li>6.2.   <a href="#rfc.section.6.2">Authenticated APIs</a>
+</ul><li>3.3.   <a href="#rfc.section.3.3">Evaluating an Identifier</a>
 </li>
-<li>6.3.   <a href="#rfc.section.6.3">Secure APIs</a>
+<li>3.4.   <a href="#rfc.section.3.4">Examples of an Identifier</a>
 </li>
-<li>6.4.   <a href="#rfc.section.6.4">Risk of Nuisance Captive Portal</a>
+<ul><li>3.4.1.   <a href="#rfc.section.3.4.1">Physical Interface</a>
 </li>
-<li>6.5.   <a href="#rfc.section.6.5">User Options</a>
+<li>3.4.2.   <a href="#rfc.section.3.4.2">IP Address</a>
 </li>
-</ul><li>7.   <a href="#rfc.references">References</a>
+</ul></ul><li>4.   <a href="#rfc.section.4">Solution Workflow</a>
 </li>
-<ul><li>7.1.   <a href="#rfc.references.1">Normative References</a>
+<ul><li>4.1.   <a href="#rfc.section.4.1">Initial Connection</a>
 </li>
-<li>7.2.   <a href="#rfc.references.2">Informative References</a>
+<li>4.2.   <a href="#rfc.section.4.2">Conditions Expire</a>
+</li>
+</ul><li>5.   <a href="#rfc.section.5">Acknowledgements</a>
+</li>
+<li>6.   <a href="#rfc.section.6">IANA Considerations</a>
+</li>
+<li>7.   <a href="#rfc.section.7">Security Considerations</a>
+</li>
+<ul><li>7.1.   <a href="#rfc.section.7.1">Trusting the Network</a>
+</li>
+<li>7.2.   <a href="#rfc.section.7.2">Authenticated APIs</a>
+</li>
+<li>7.3.   <a href="#rfc.section.7.3">Secure APIs</a>
+</li>
+<li>7.4.   <a href="#rfc.section.7.4">Risk of Nuisance Captive Portal</a>
+</li>
+<li>7.5.   <a href="#rfc.section.7.5">User Options</a>
+</li>
+</ul><li>8.   <a href="#rfc.references">References</a>
+</li>
+<ul><li>8.1.   <a href="#rfc.references.1">Normative References</a>
+</li>
+<li>8.2.   <a href="#rfc.references.2">Informative References</a>
 </li>
 </ul><li><a href="#rfc.authors">Authors' Addresses</a>
 </li>
@@ -509,7 +542,7 @@ address {
 <p id="rfc.section.2.3.p.2">The URI of this API will have been provisioned to the User Equipment.  (Refer to <a href="#section_provisioning" class="xref">Section 2.2</a>).  </p>
 <p id="rfc.section.2.3.p.3">This architecture expects the User Equipment to query the API when the User Equipment attaches to the network and multiple times thereafter.  Therefore the API MUST support multiple repeated queries from the same User Equipment, returning current state of captivity for the equipment.  </p>
 <p id="rfc.section.2.3.p.4">At minimum the API MUST provide: (1) the state of captivity and (2) a URI for a browser to present the portal application to the user.  The API SHOULD provide evidence to the caller that it supports the present architecture.  </p>
-<p id="rfc.section.2.3.p.5">When user equipment receives (and validates) ICMP Captive Portal alerts, the user equipment SHOULD query the API to check the state.  The User Equipment SHOULD rate-limit these API queries in the event of ICMP flooding by an attacker. (See <a href="#Security" class="xref">Section 6</a>.) </p>
+<p id="rfc.section.2.3.p.5">When user equipment receives (and validates) ICMP Captive Portal alerts, the user equipment SHOULD query the API to check the state.  The User Equipment SHOULD rate-limit these API queries in the event of ICMP flooding by an attacker. (See <a href="#Security" class="xref">Section 7</a>.) </p>
 <p id="rfc.section.2.3.p.6">The API MUST be extensible to support future use-cases by allowing extensible information elements. Suggestions include quota information, expiry time, method of providing credentials, security token for validating ICMP messages.  </p>
 <p id="rfc.section.2.3.p.7">The API MUST use TLS for privacy and server authentication.  The implementation of the API MUST ensure both privacy and integrity of any information provided by or required by it.  </p>
 <p id="rfc.section.2.3.p.8">This document does not specify the details of the API.  </p>
@@ -558,8 +591,8 @@ o . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . o
 . +------------+                             | web portal  |    .
 .       ^  |  Connection Attempt             +-------------+    .
 .       |  |  to prohibited service.                   |        .
-.       |  +------------------&gt; +---------------+  Allow/Deny   . 
-.       |                       |               |    Rules      . 
+.       |  +------------------&gt; +---------------+  Allow/Deny   .
+.       |                       |               |    Rules      .
 .       |   ICMP Unreachable    | Captive Portal|     |         .
 .       +---------------------+ | Enforcement   | &lt;---+         .
 .                               +---------------+               .
@@ -583,12 +616,75 @@ o . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . o
 <p> </p>
 <p id="rfc.section.2.6.p.2">Although the provisioning, API, and web portal functions are shown as discrete blocks, they could of course be combined into a single element.  </p>
 <h1 id="rfc.section.3">
-<a href="#rfc.section.3">3.</a> <a href="#section_workflow" id="section_workflow">Solution Workflow</a>
+<a href="#rfc.section.3">3.</a> <a href="#ue_identity" id="ue_identity">User Equipment Identity</a>
 </h1>
-<p id="rfc.section.3.p.1">This section aims to improve understanding by describing a possible workflow of solutions adhering to the architecture.  </p>
+<p id="rfc.section.3.p.1">Multiple components in the architecture interact with both the User Equipment and each other. Since the User Equipment is the focus of these interactions, the components must be able to both identify the user equipment from their interactions with it, and be able to agree on the identify of the user equipment when interacting with each other.  </p>
+<p id="rfc.section.3.p.2">The methods by which the components interact restrict the type of information that may be used as an identifying charactertics. This section discusses the identifying charactersitics.  </p>
 <h1 id="rfc.section.3.1">
-<a href="#rfc.section.3.1">3.1.</a> Initial Connection</h1>
-<p id="rfc.section.3.1.p.1">This section describes a possible work-flow when User Equipment initially joins a Captive Network.  </p>
+<a href="#rfc.section.3.1">3.1.</a> <a href="#id_identifiers" id="id_identifiers">Identifiers</a>
+</h1>
+<p id="rfc.section.3.1.p.1">An Identifier is a chatacteristic of the User Equipment used by the components of a Captive Portal to uniquely determine which specific User Equipment is interacting with them.  An Identifier MAY be a field contained in packets sent by the User Equipment to the External Network. Or, an Identifier MAY be an ephemeral property not contained in packets destined for the External Network, but instead correlated with such information through knowledge available to the different components.  </p>
+<h1 id="rfc.section.3.2">
+<a href="#rfc.section.3.2">3.2.</a> <a href="#id_recommended_props" id="id_recommended_props">Recommended Properties</a>
+</h1>
+<p id="rfc.section.3.2.p.1">The set of possible identifiers is quite large. However, in order to be considered a good identifer, an identifier SHOULD meet the following criteria. Note that the optimal identifier will likely change depending on the positino of the components in the network as well as the information available to them.  An identifier SHOULD: </p>
+
+<ul>
+<li>Uniquely Identify the User Equipment</li>
+<li>Be Hard to Spoof</li>
+<li>Be Visible to the API</li>
+<li>Be Visible to the Enforcement Device</li>
+</ul>
+
+<p> </p>
+<h1 id="rfc.section.3.2.1">
+<a href="#rfc.section.3.2.1">3.2.1.</a> <a href="#id_recommended_unique" id="id_recommended_unique">Uniquely Identify User Equipment</a>
+</h1>
+<p id="rfc.section.3.2.1.p.1">In order to uniquely identify the User Equipment, at most one user equipment interacting with the other components of the Captive Portal MUST have a given value of the identifier.  </p>
+<p id="rfc.section.3.2.1.p.2">Over time, the user equipment identified by the value MAY change. Allowing the identified device to change over time ensures that the space of possible identifying vallues need not be overly large.  </p>
+<p id="rfc.section.3.2.1.p.3">Independent Captive Portals MAY use the same identifying value to identify different User Equipment. Allowing indendent captive portals to reuse identifying values allows the identifier to be a property of the local network, expanding the space of possible identifiers.  </p>
+<h1 id="rfc.section.3.2.2">
+<a href="#rfc.section.3.2.2">3.2.2.</a> <a href="#id_recommended_hard" id="id_recommended_hard">Hard to Spoof</a>
+</h1>
+<p id="rfc.section.3.2.2.p.1">A good identifier does not lend itself to being easily spoofed. At no time should it be simple or straightforward for one User Equipment to pretend to be another User Equipment, regardless of whether both are active at the same time. This property is particularly important when the user equipment is extended externally to devices such as billing systems, or where the identity of the User Equipment could imply liability.  </p>
+<h1 id="rfc.section.3.2.3">
+<a href="#rfc.section.3.2.3">3.2.3.</a> <a href="#id_recommended_visible_api" id="id_recommended_visible_api">Visible to the API</a>
+</h1>
+<p id="rfc.section.3.2.3.p.1">Since the API will need to perform operations which rely on the identify of the user equipment, such as query whether it is captive, the API needs to be able to relate requests to the User Equipment making the request.  </p>
+<h1 id="rfc.section.3.2.4">
+<a href="#rfc.section.3.2.4">3.2.4.</a> <a href="#id_recommended_visible_ed" id="id_recommended_visible_ed">Visible to the Enforcement Device</a>
+</h1>
+<p id="rfc.section.3.2.4.p.1">The Enforcement Device will decide on a per packet basis whether it should be permitted to communicate with the external network. Since this decision depends on which User Equipment sent the packet, the Enforcement Device requires that it be able to map the packet to its concept of the User Equipment.  </p>
+<h1 id="rfc.section.3.3">
+<a href="#rfc.section.3.3">3.3.</a> <a href="#id_evaluating" id="id_evaluating">Evaluating an Identifier</a>
+</h1>
+<p id="rfc.section.3.3.p.1">To evaluate whether an identifer is appropriate, one should consider every recommended property from the perspective of interactions among the components in the architecture. When comparing identifiers, choose the one which best satifies all of the recommended properties. The architecture does not provide an exact measure of how well an identifier satisfies a given property; care should be taken in performing the evaluation.  </p>
+<h1 id="rfc.section.3.4">
+<a href="#rfc.section.3.4">3.4.</a> <a href="#id_examples" id="id_examples">Examples of an Identifier</a>
+</h1>
+<p id="rfc.section.3.4.p.1">This section provides some examples of identifiers, along with some evaluation of whether they are good identifiers. The list of identifiers is not exhaustive. Other identifiers may be used. An important point to note is that whether the identifiers are good depends heavily on the capabilities of the components and where in the network the components exist.  </p>
+<h1 id="rfc.section.3.4.1">
+<a href="#rfc.section.3.4.1">3.4.1.</a> <a href="#id_example_interface" id="id_example_interface">Physical Interface</a>
+</h1>
+<p id="rfc.section.3.4.1.p.1">The physical interface by which the User Equipment is attached to the network can be used to identify the User Equipment. This identifier has the property of being extremely difficult to spoof: the User Equipment is unaware of the property; one User Equipment cannot manipulate its interactions to appear as though it is another.  </p>
+<p id="rfc.section.3.4.1.p.2">Further, if only a single User Equipment is attatched to a given physical interface, then the identifier will be unique. If multiple User Equipment is attached to the network on the same physical interface, then this property is not appropriate.  </p>
+<p id="rfc.section.3.4.1.p.3">Another consideration related to uniqueness of the User Equipment is that if the attached User Equipment changes, both the API server and the Enforcement Device must invalidate their state related to the User Equipment.  </p>
+<p id="rfc.section.3.4.1.p.4">The Enforcement Device needs to be aware of the physical interface, which constrains the environment: it must either be part of the device providing physical access (e.g., implemented in firmware), or packets traversing the network must be extended to include information about the source physical interface (e.g.  a tunnel).  </p>
+<p id="rfc.section.3.4.1.p.5">The API server faces a similar problem, implying that it should co-exist with the Enforcement Device, or that the enforcement device should extend requests to it with the identifying information.  </p>
+<h1 id="rfc.section.3.4.2">
+<a href="#rfc.section.3.4.2">3.4.2.</a> <a href="#id_example_IP_address" id="id_example_IP_address">IP Address</a>
+</h1>
+<p id="rfc.section.3.4.2.p.1">A natural identifier to consider is the IP address of the User Equipment.  At any given time, no device on the network can have the same IP address without causing the network to malfunction, so it is appropriate from the perspective of uniqueness.  </p>
+<p id="rfc.section.3.4.2.p.2">However, it may be possible to spoof the IP address, particularly for malicious reasons where proper functioning of the network is not necessary for the malicious actor. Consequently, any solution using the IP address should proactively try to prevent spoofing of the IP address. Similarily, if the mapping of IP address to User Equipment is changed, the components of the architecture must remove or update their mapping to prevent spoofing.  Demonstrations of return routeability, such as that required for TCP connection establishment, might be sufficient defense against spoofing, though this might not be sufficient in networks that use broadcast media (such as some wireless networks).  </p>
+<p id="rfc.section.3.4.2.p.3">Since the IP address may traverse multiple segments of the network, more flexibility is afforded to the Enforcement Device and the API server: they simply must exist on a segment of the network where the IP address is still unique. However, consider that a NAT may be deployed between the User Equipment and the Enforcement Device. In such cases, it is possible for the components to still uniquely identify the device if they are aware of the port mapping.  </p>
+<p id="rfc.section.3.4.2.p.4">In some situtations, the User Equipment may have multiple IP addresses, while still satisfying all of the recommended properties. This raises some challenges to the components of the network. For example, if the user equipment tries to access the network with multiple IP addresses, should the enforcement device and API server treat each IP address as a unique User Equipment, or should it tie the multiple addresses together into one view of the subscriber? An implementation MAY do either. Attention should be paid to IPv6 and the fact that it is expected for a device to have multiple IPv6 addresses on a single link. In such cases, idenfication could be performed by subnet, such as the /64 to which the IP belongs.  </p>
+<h1 id="rfc.section.4">
+<a href="#rfc.section.4">4.</a> <a href="#section_workflow" id="section_workflow">Solution Workflow</a>
+</h1>
+<p id="rfc.section.4.p.1">This section aims to improve understanding by describing a possible workflow of solutions adhering to the architecture.  </p>
+<h1 id="rfc.section.4.1">
+<a href="#rfc.section.4.1">4.1.</a> Initial Connection</h1>
+<p id="rfc.section.4.1.p.1">This section describes a possible work-flow when User Equipment initially joins a Captive Network.  </p>
 <p></p>
 
 <ol>
@@ -603,9 +699,9 @@ o . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . o
 </ol>
 
 <p> </p>
-<h1 id="rfc.section.3.2">
-<a href="#rfc.section.3.2">3.2.</a> Conditions Expire</h1>
-<p id="rfc.section.3.2.p.1">This section describes a possible work-flow when conditions expire and the user visits the portal again (e.g., low quota, or time expiry).  </p>
+<h1 id="rfc.section.4.2">
+<a href="#rfc.section.4.2">4.2.</a> Conditions Expire</h1>
+<p id="rfc.section.4.2.p.1">This section describes a possible work-flow when conditions expire and the user visits the portal again (e.g., low quota, or time expiry).  </p>
 <p></p>
 
 <ol>
@@ -621,31 +717,31 @@ o . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . o
 </ol>
 
 <p> </p>
-<h1 id="rfc.section.4">
-<a href="#rfc.section.4">4.</a> <a href="#Acknowledgements" id="Acknowledgements">Acknowledgements</a>
-</h1>
-<p id="rfc.section.4.p.1">The authors thank various individuals for their feedback on the mailing list and during the IETF98 hackathon: David Bird, Eric Kline, Alexis La Goulette, Alex Roscoe, Darshak Thakore, and Vincent van Dam.  </p>
 <h1 id="rfc.section.5">
-<a href="#rfc.section.5">5.</a> <a href="#IANA" id="IANA">IANA Considerations</a>
+<a href="#rfc.section.5">5.</a> <a href="#Acknowledgements" id="Acknowledgements">Acknowledgements</a>
 </h1>
-<p id="rfc.section.5.p.1">This memo includes no request to IANA.</p>
+<p id="rfc.section.5.p.1">The authors thank various individuals for their feedback on the mailing list and during the IETF98 hackathon: David Bird, Eric Kline, Alexis La Goulette, Alex Roscoe, Darshak Thakore, and Vincent van Dam.  </p>
 <h1 id="rfc.section.6">
-<a href="#rfc.section.6">6.</a> <a href="#Security" id="Security">Security Considerations</a>
+<a href="#rfc.section.6">6.</a> <a href="#IANA" id="IANA">IANA Considerations</a>
 </h1>
-<h1 id="rfc.section.6.1">
-<a href="#rfc.section.6.1">6.1.</a> Trusting the Network</h1>
-<p id="rfc.section.6.1.p.1">When joining a network, some trust is placed in the network operator.  This is usually considered to be a decision by a user on the basis of the reputation of an organization. However, once a user makes such a decision, protocols can support authenticating a network is operated by who claims to be operating it.  The Provisioning Domain Architecture <a href="#RFC7556" class="xref">[RFC7556]</a> provides some discussion on authenticating an operator.  </p>
-<p id="rfc.section.6.1.p.2">Given that a user chooses to visit a Captive Portal URI, the URI location SHOULD be securely provided to the user's device. E.g., the DHCPv6 AUTH option can sign this information.  </p>
-<p id="rfc.section.6.1.p.3">If a user decides to incorrectly trust an attacking network, they might be convinced to visit an attacking web page and unwittingly provide credentials to an attacker. Browsers can authenticate servers but cannot detect cleverly misspelled domains, for example.  </p>
-<h1 id="rfc.section.6.2">
-<a href="#rfc.section.6.2">6.2.</a> Authenticated APIs</h1>
-<p id="rfc.section.6.2.p.1">The solution described here assumes that when the User Equipment needs to trust the API server, server authentication will be performed using TLS mechanisms.  </p>
-<h1 id="rfc.section.6.3">
-<a href="#rfc.section.6.3">6.3.</a> Secure APIs</h1>
-<p id="rfc.section.6.3.p.1">The solution described here requires that the API be secured using TLS.  This is required to allow the user equipment and API server to exchange secrets which can be used to validate future interactions. The API must ensure the integrity of this information, as well as its confidentiality.  </p>
-<h1 id="rfc.section.6.4">
-<a href="#rfc.section.6.4">6.4.</a> Risk of Nuisance Captive Portal</h1>
-<p id="rfc.section.6.4.p.1">It is possible for any user on the Internet to send ICMP packets in an attempt to cause the receiving equipment to go to the captive portal. This has been considered and addressed in the following ways: </p>
+<p id="rfc.section.6.p.1">This memo includes no request to IANA.</p>
+<h1 id="rfc.section.7">
+<a href="#rfc.section.7">7.</a> <a href="#Security" id="Security">Security Considerations</a>
+</h1>
+<h1 id="rfc.section.7.1">
+<a href="#rfc.section.7.1">7.1.</a> Trusting the Network</h1>
+<p id="rfc.section.7.1.p.1">When joining a network, some trust is placed in the network operator.  This is usually considered to be a decision by a user on the basis of the reputation of an organization. However, once a user makes such a decision, protocols can support authenticating a network is operated by who claims to be operating it.  The Provisioning Domain Architecture <a href="#RFC7556" class="xref">[RFC7556]</a> provides some discussion on authenticating an operator.  </p>
+<p id="rfc.section.7.1.p.2">Given that a user chooses to visit a Captive Portal URI, the URI location SHOULD be securely provided to the user's device. E.g., the DHCPv6 AUTH option can sign this information.  </p>
+<p id="rfc.section.7.1.p.3">If a user decides to incorrectly trust an attacking network, they might be convinced to visit an attacking web page and unwittingly provide credentials to an attacker. Browsers can authenticate servers but cannot detect cleverly misspelled domains, for example.  </p>
+<h1 id="rfc.section.7.2">
+<a href="#rfc.section.7.2">7.2.</a> Authenticated APIs</h1>
+<p id="rfc.section.7.2.p.1">The solution described here assumes that when the User Equipment needs to trust the API server, server authentication will be performed using TLS mechanisms.  </p>
+<h1 id="rfc.section.7.3">
+<a href="#rfc.section.7.3">7.3.</a> Secure APIs</h1>
+<p id="rfc.section.7.3.p.1">The solution described here requires that the API be secured using TLS.  This is required to allow the user equipment and API server to exchange secrets which can be used to validate future interactions. The API must ensure the integrity of this information, as well as its confidentiality.  </p>
+<h1 id="rfc.section.7.4">
+<a href="#rfc.section.7.4">7.4.</a> Risk of Nuisance Captive Portal</h1>
+<p id="rfc.section.7.4.p.1">It is possible for any user on the Internet to send ICMP packets in an attempt to cause the receiving equipment to go to the captive portal. This has been considered and addressed in the following ways: </p>
 
 <ul class="empty">
 <li>The ICMP packet does not carry the URL, making this method safer than HTTP 3xx-redirect methods currently in use.  The User Equipment does not have to use clear-text HTTP to solicit the URL of the portal.  </li>
@@ -655,13 +751,13 @@ o . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . o
 </ul>
 
 <p> </p>
-<h1 id="rfc.section.6.5">
-<a href="#rfc.section.6.5">6.5.</a> User Options</h1>
-<p id="rfc.section.6.5.p.1">The ICMP messaging informs the User Equipment that it is being held captive.  There is no requirement that the User Equipment do something about this.  Devices MAY permit users to disable automatic reaction to captive-portal indications for privacy reasons.  However, there is the trade-off that the user doesn't get notified when network access is restricted.  Hence, end-user devices MAY allow users to manually control captive portal interactions, possibly on the granularity of Provisioning Domains.  </p>
+<h1 id="rfc.section.7.5">
+<a href="#rfc.section.7.5">7.5.</a> User Options</h1>
+<p id="rfc.section.7.5.p.1">The ICMP messaging informs the User Equipment that it is being held captive.  There is no requirement that the User Equipment do something about this.  Devices MAY permit users to disable automatic reaction to captive-portal indications for privacy reasons.  However, there is the trade-off that the user doesn't get notified when network access is restricted.  Hence, end-user devices MAY allow users to manually control captive portal interactions, possibly on the granularity of Provisioning Domains.  </p>
 <h1 id="rfc.references">
-<a href="#rfc.references">7.</a> References</h1>
+<a href="#rfc.references">8.</a> References</h1>
 <h1 id="rfc.references.1">
-<a href="#rfc.references.1">7.1.</a> Normative References</h1>
+<a href="#rfc.references.1">8.1.</a> Normative References</h1>
 <table><tbody>
 <tr>
 <td class="reference"><b id="RFC2119">[RFC2119]</b></td>
@@ -680,7 +776,7 @@ o . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . o
 </tr>
 </tbody></table>
 <h1 id="rfc.references.2">
-<a href="#rfc.references.2">7.2.</a> Informative References</h1>
+<a href="#rfc.references.2">8.2.</a> Informative References</h1>
 <table><tbody>
 <tr>
 <td class="reference"><b id="I-D.ietf-intarea-provisioning-domains">[I-D.ietf-intarea-provisioning-domains]</b></td>
