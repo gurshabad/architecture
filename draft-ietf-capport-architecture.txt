@@ -5,11 +5,11 @@
 Internet Engineering Task Force                                K. Larose
 Internet-Draft                                                  Sandvine
 Intended status: Informational                                 D. Dolson
-Expires: September 7, 2018                                 March 6, 2018
+Expires: September 19, 2018                               March 18, 2018
 
 
                           CAPPORT Architecture
-                 draft-ietf-capport-architecture-latest
+                   draft-ietf-capport-architecture-01
 
 Abstract
 
@@ -33,7 +33,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on September 7, 2018.
+   This Internet-Draft will expire on September 19, 2018.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Larose & Dolson         Expires September 7, 2018               [Page 1]
+Larose & Dolson        Expires September 19, 2018               [Page 1]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Larose & Dolson         Expires September 7, 2018               [Page 2]
+Larose & Dolson        Expires September 19, 2018               [Page 2]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -165,7 +165,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018               [Page 3]
+Larose & Dolson        Expires September 19, 2018               [Page 3]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -221,7 +221,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018               [Page 4]
+Larose & Dolson        Expires September 19, 2018               [Page 4]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -277,7 +277,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018               [Page 5]
+Larose & Dolson        Expires September 19, 2018               [Page 5]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -333,7 +333,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018               [Page 6]
+Larose & Dolson        Expires September 19, 2018               [Page 6]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -389,7 +389,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018               [Page 7]
+Larose & Dolson        Expires September 19, 2018               [Page 7]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -445,7 +445,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018               [Page 8]
+Larose & Dolson        Expires September 19, 2018               [Page 8]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -501,7 +501,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018               [Page 9]
+Larose & Dolson        Expires September 19, 2018               [Page 9]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -557,7 +557,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018              [Page 10]
+Larose & Dolson        Expires September 19, 2018              [Page 10]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -613,7 +613,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018              [Page 11]
+Larose & Dolson        Expires September 19, 2018              [Page 11]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -669,7 +669,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018              [Page 12]
+Larose & Dolson        Expires September 19, 2018              [Page 12]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -725,7 +725,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018              [Page 13]
+Larose & Dolson        Expires September 19, 2018              [Page 13]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -781,7 +781,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018              [Page 14]
+Larose & Dolson        Expires September 19, 2018              [Page 14]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -837,7 +837,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018              [Page 15]
+Larose & Dolson        Expires September 19, 2018              [Page 15]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -893,7 +893,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018              [Page 16]
+Larose & Dolson        Expires September 19, 2018              [Page 16]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -949,7 +949,7 @@ Internet-Draft            CAPPORT Architecture                March 2018
 
 
 
-Larose & Dolson         Expires September 7, 2018              [Page 17]
+Larose & Dolson        Expires September 19, 2018              [Page 17]
 
 Internet-Draft            CAPPORT Architecture                March 2018
 
@@ -1005,4 +1005,4 @@ Authors' Addresses
 
 
 
-Larose & Dolson         Expires September 7, 2018              [Page 18]
+Larose & Dolson        Expires September 19, 2018              [Page 18]
