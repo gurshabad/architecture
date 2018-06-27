@@ -8,11 +8,13 @@
     "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/9/events",
     "html_url": "https://github.com/capport-wg/architecture/pull/9",
     "id": 302100964,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTcyNzI4Njk2",
     "number": 9,
     "title": "Add identifier section",
     "user": {
       "login": "klarose",
       "id": 23175939,
+      "node_id": "MDQ6VXNlcjIzMTc1OTM5",
       "avatar_url": "https://avatars1.githubusercontent.com/u/23175939?v=4",
       "gravatar_id": "",
       "url": "https://api.github.com/users/klarose",
@@ -32,7 +34,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -41,8 +43,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-03-04T16:48:17Z",
-    "updated_at": "2018-03-05T16:14:22Z",
-    "closed_at": null,
+    "updated_at": "2018-03-06T01:19:23Z",
+    "closed_at": "2018-03-06T01:19:23Z",
     "author_association": "CONTRIBUTOR",
     "pull_request": {
       "url": "https://api.github.com/repos/capport-wg/architecture/pulls/9",
@@ -60,11 +62,13 @@
     "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/8/events",
     "html_url": "https://github.com/capport-wg/architecture/issues/8",
     "id": 301641626,
+    "node_id": "MDU6SXNzdWUzMDE2NDE2MjY=",
     "number": 8,
     "title": "What to do about ICMP",
     "user": {
       "login": "martinthomson",
       "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
       "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
       "gravatar_id": "",
       "url": "https://api.github.com/users/martinthomson",
@@ -91,9 +95,9 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 2,
     "created_at": "2018-03-02T03:29:38Z",
-    "updated_at": "2018-03-02T03:29:38Z",
+    "updated_at": "2018-06-27T23:25:48Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "body": "We need a firm decision about inclusion or not.  If we include it, then we need a doc defining mechanisms."
@@ -106,11 +110,13 @@
     "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/7/events",
     "html_url": "https://github.com/capport-wg/architecture/pull/7",
     "id": 300863694,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTcxODM3MzM5",
     "number": 7,
     "title": "Update TLS wording to be stronger",
     "user": {
       "login": "klarose",
       "id": 23175939,
+      "node_id": "MDQ6VXNlcjIzMTc1OTM5",
       "avatar_url": "https://avatars1.githubusercontent.com/u/23175939?v=4",
       "gravatar_id": "",
       "url": "https://api.github.com/users/klarose",
@@ -130,7 +136,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -139,8 +145,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-02-28T02:06:52Z",
-    "updated_at": "2018-03-05T23:35:22Z",
-    "closed_at": null,
+    "updated_at": "2018-03-06T01:19:44Z",
+    "closed_at": "2018-03-06T01:05:12Z",
     "author_association": "CONTRIBUTOR",
     "pull_request": {
       "url": "https://api.github.com/repos/capport-wg/architecture/pulls/7",
@@ -158,11 +164,13 @@
     "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/6/events",
     "html_url": "https://github.com/capport-wg/architecture/issues/6",
     "id": 288483988,
+    "node_id": "MDU6SXNzdWUyODg0ODM5ODg=",
     "number": 6,
     "title": "HTTPS",
     "user": {
       "login": "martinthomson",
       "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
       "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
       "gravatar_id": "",
       "url": "https://api.github.com/users/martinthomson",
@@ -204,11 +212,13 @@
     "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/5/events",
     "html_url": "https://github.com/capport-wg/architecture/issues/5",
     "id": 272365153,
+    "node_id": "MDU6SXNzdWUyNzIzNjUxNTM=",
     "number": 5,
     "title": "Which portion of packet is used for capport enforcement?",
     "user": {
       "login": "dcdolson",
       "id": 6045854,
+      "node_id": "MDQ6VXNlcjYwNDU4NTQ=",
       "avatar_url": "https://avatars0.githubusercontent.com/u/6045854?v=4",
       "gravatar_id": "",
       "url": "https://api.github.com/users/dcdolson",
@@ -250,11 +260,13 @@
     "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/4/events",
     "html_url": "https://github.com/capport-wg/architecture/issues/4",
     "id": 272353005,
+    "node_id": "MDU6SXNzdWUyNzIzNTMwMDU=",
     "number": 4,
     "title": "Mechanism to indicate \"no captive portal\"",
     "user": {
       "login": "dcdolson",
       "id": 6045854,
+      "node_id": "MDQ6VXNlcjYwNDU4NTQ=",
       "avatar_url": "https://avatars0.githubusercontent.com/u/6045854?v=4",
       "gravatar_id": "",
       "url": "https://api.github.com/users/dcdolson",
@@ -281,9 +293,9 @@
 
     ],
     "milestone": null,
-    "comments": 6,
+    "comments": 7,
     "created_at": "2017-11-08T21:18:58Z",
-    "updated_at": "2018-02-28T13:29:54Z",
+    "updated_at": "2018-03-17T10:20:35Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "body": "The current (RFC7710) DHCP option doesn’t have a way to say “there’s no captive portal to talk to”, so whenever we don’t see it, we’ll need to send a probe.\r\nGiving a network a means of indicating there is no capport would improve connecting time.\r\nSame for Provisioning Domains info."
@@ -296,11 +308,13 @@
     "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/3/events",
     "html_url": "https://github.com/capport-wg/architecture/issues/3",
     "id": 272352495,
+    "node_id": "MDU6SXNzdWUyNzIzNTI0OTU=",
     "number": 3,
     "title": "Clarify Provisioning Domains capport representation",
     "user": {
       "login": "dcdolson",
       "id": 6045854,
+      "node_id": "MDQ6VXNlcjYwNDU4NTQ=",
       "avatar_url": "https://avatars0.githubusercontent.com/u/6045854?v=4",
       "gravatar_id": "",
       "url": "https://api.github.com/users/dcdolson",
@@ -327,9 +341,9 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2017-11-08T21:17:07Z",
-    "updated_at": "2017-11-08T21:17:07Z",
+    "updated_at": "2018-03-20T14:52:08Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "body": "Does PvD mechanism deliver the capport state, or a pointer to the capport API, from which capport state is retrieved?"
@@ -342,11 +356,13 @@
     "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/2/events",
     "html_url": "https://github.com/capport-wg/architecture/issues/2",
     "id": 272351261,
+    "node_id": "MDU6SXNzdWUyNzIzNTEyNjE=",
     "number": 2,
     "title": "Deprecate or update RFC7710?",
     "user": {
       "login": "dcdolson",
       "id": 6045854,
+      "node_id": "MDQ6VXNlcjYwNDU4NTQ=",
       "avatar_url": "https://avatars0.githubusercontent.com/u/6045854?v=4",
       "gravatar_id": "",
       "url": "https://api.github.com/users/dcdolson",
@@ -373,9 +389,9 @@
 
     ],
     "milestone": null,
-    "comments": 3,
+    "comments": 4,
     "created_at": "2017-11-08T21:12:46Z",
-    "updated_at": "2018-02-22T01:24:05Z",
+    "updated_at": "2018-05-02T06:43:02Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "body": "RFC7710 is unclear on what kind of API is to be found at the URI conveyed in the DHCP option.\r\nThis could be clarified, OR deprecated if replaced by PvD."
@@ -388,11 +404,13 @@
     "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/1/events",
     "html_url": "https://github.com/capport-wg/architecture/pull/1",
     "id": 263794821,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ1MzgwNTAw",
     "number": 1,
     "title": "Use i-d-template",
     "user": {
       "login": "martinthomson",
       "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
       "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
       "gravatar_id": "",
       "url": "https://api.github.com/users/martinthomson",
