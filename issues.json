@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/10",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/10/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/10/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/10/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/10",
+    "id": 336423406,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk3ODgwODAx",
+    "number": 10,
+    "title": "Remove icmp",
+    "user": {
+      "login": "klarose",
+      "id": 23175939,
+      "node_id": "MDQ6VXNlcjIzMTc1OTM5",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/23175939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/klarose",
+      "html_url": "https://github.com/klarose",
+      "followers_url": "https://api.github.com/users/klarose/followers",
+      "following_url": "https://api.github.com/users/klarose/following{/other_user}",
+      "gists_url": "https://api.github.com/users/klarose/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/klarose/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/klarose/subscriptions",
+      "organizations_url": "https://api.github.com/users/klarose/orgs",
+      "repos_url": "https://api.github.com/users/klarose/repos",
+      "events_url": "https://api.github.com/users/klarose/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/klarose/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-06-27T23:34:48Z",
+    "updated_at": "2018-06-29T23:14:36Z",
+    "closed_at": "2018-06-29T23:14:36Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/10",
+      "html_url": "https://github.com/capport-wg/architecture/pull/10",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/10.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/10.patch"
+    },
+    "body": "This PR attempts to deal with issue #8 by replacing references to ICMP with a generic signaling protocols, then specifying requirements for it."
+  },
+  {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/9",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
     "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/9/labels{/name}",
@@ -88,17 +142,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 2,
+    "comments": 3,
     "created_at": "2018-03-02T03:29:38Z",
-    "updated_at": "2018-06-27T23:25:48Z",
-    "closed_at": null,
+    "updated_at": "2018-06-29T23:15:01Z",
+    "closed_at": "2018-06-29T23:15:01Z",
     "author_association": "CONTRIBUTOR",
     "body": "We need a firm decision about inclusion or not.  If we include it, then we need a doc defining mechanisms."
   },
@@ -190,17 +244,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 9,
+    "comments": 10,
     "created_at": "2018-01-15T05:24:45Z",
-    "updated_at": "2018-03-01T22:12:06Z",
-    "closed_at": null,
+    "updated_at": "2018-06-27T23:46:12Z",
+    "closed_at": "2018-06-27T23:46:12Z",
     "author_association": "CONTRIBUTOR",
     "body": "It sure would be nice if we could mandate the use of HTTPS for the API.  It would be absolutely necessary if the API were used to exchange secrets.\r\n\r\nHTTPS does make some things a lot harder.  Traps for the unwary lie in:\r\n\r\n* OCSP or CRL validation which require that clients talk to servers that might not be on the whitelist (answer: use OCSP stapling or whitelist those names; the former being far better overall)\r\n* non-unique names like those that use IP addresses or `.local` (possible answer: use real names)\r\n* client clock skew that can't be corrected without contacting a blocked time server (rare but annoyingly hard to fix in practice)"
   },
@@ -293,9 +347,9 @@
 
     ],
     "milestone": null,
-    "comments": 7,
+    "comments": 8,
     "created_at": "2017-11-08T21:18:58Z",
-    "updated_at": "2018-03-17T10:20:35Z",
+    "updated_at": "2018-06-27T23:50:26Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "body": "The current (RFC7710) DHCP option doesn’t have a way to say “there’s no captive portal to talk to”, so whenever we don’t see it, we’ll need to send a probe.\r\nGiving a network a means of indicating there is no capport would improve connecting time.\r\nSame for Provisioning Domains info."
@@ -382,17 +436,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 4,
+    "comments": 5,
     "created_at": "2017-11-08T21:12:46Z",
-    "updated_at": "2018-05-02T06:43:02Z",
-    "closed_at": null,
+    "updated_at": "2018-06-27T23:48:37Z",
+    "closed_at": "2018-06-27T23:48:37Z",
     "author_association": "CONTRIBUTOR",
     "body": "RFC7710 is unclear on what kind of API is to be found at the URI conveyed in the DHCP option.\r\nThis could be clarified, OR deprecated if replaced by PvD."
   },
