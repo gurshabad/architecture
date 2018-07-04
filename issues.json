@@ -292,17 +292,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 14,
+    "comments": 15,
     "created_at": "2017-11-08T22:00:16Z",
-    "updated_at": "2018-03-05T09:44:07Z",
-    "closed_at": null,
+    "updated_at": "2018-06-29T23:16:37Z",
+    "closed_at": "2018-06-29T23:16:37Z",
     "author_association": "CONTRIBUTOR",
     "body": "E.g., MAC address or IP address? Or?\r\nUse of MAC address means enforcement must be on the local layer2 segment.\r\nUse of IP address has complexity around the user device randomly changing the IPv6 address."
   },
