@@ -5,7 +5,7 @@
 Internet Engineering Task Force                                K. Larose
 Internet-Draft                                                  Agilicus
 Intended status: Informational                                 D. Dolson
-Expires: December 31, 2018                                 June 29, 2018
+Expires: January 5, 2019                                    July 4, 2018
 
 
                           CAPPORT Architecture
@@ -33,7 +33,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on December 31, 2018.
+   This Internet-Draft will expire on January 5, 2019.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Larose & Dolson         Expires December 31, 2018               [Page 1]
+Larose & Dolson          Expires January 5, 2019                [Page 1]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
 Table of Contents
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Larose & Dolson         Expires December 31, 2018               [Page 2]
+Larose & Dolson          Expires January 5, 2019                [Page 2]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    by the network operator, such as reading advertisements, accepting an
@@ -165,9 +165,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018               [Page 3]
+Larose & Dolson          Expires January 5, 2019                [Page 3]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    captivity.  However, this document does not yet describe a mechanism
@@ -221,9 +221,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018               [Page 4]
+Larose & Dolson          Expires January 5, 2019                [Page 4]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    Captive Portal Enforcement: The network equipment which enforces the
@@ -277,9 +277,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018               [Page 5]
+Larose & Dolson          Expires January 5, 2019                [Page 5]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
       be connecting to a WiFi network; the operating system MAY avoid
@@ -333,9 +333,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018               [Page 6]
+Larose & Dolson          Expires January 5, 2019                [Page 6]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    should provide a different result when access is not restricted.
@@ -389,9 +389,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018               [Page 7]
+Larose & Dolson          Expires January 5, 2019                [Page 7]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
 2.4.  Captive Portal Enforcement
@@ -445,9 +445,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018               [Page 8]
+Larose & Dolson          Expires January 5, 2019                [Page 8]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    the architecture, requirements for a Captive Portal Signaling
@@ -501,9 +501,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018               [Page 9]
+Larose & Dolson          Expires January 5, 2019                [Page 9]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    The following diagram shows the communication between each component.
@@ -557,9 +557,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018              [Page 10]
+Larose & Dolson          Expires January 5, 2019               [Page 10]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    o  The CAPPORT web portal server directs the Captive Portal
@@ -576,7 +576,7 @@ Internet-Draft            CAPPORT Architecture                 June 2018
    Equipment and each other.  Since the User Equipment is the focus of
    these interactions, the components must be able to both identify the
    user equipment from their interactions with it, and be able to agree
-   on the identify of the user equipment when interacting with each
+   on the identity of the user equipment when interacting with each
    other.
 
    The methods by which the components interact restrict the type of
@@ -613,9 +613,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018              [Page 11]
+Larose & Dolson          Expires January 5, 2019               [Page 11]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
 3.2.1.  Uniquely Identify User Equipment
@@ -647,7 +647,7 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 3.2.3.  Visible to the API
 
    Since the API will need to perform operations which rely on the
-   identify of the user equipment, such as query whether it is captive,
+   identity of the user equipment, such as query whether it is captive,
    the API needs to be able to relate requests to the User Equipment
    making the request.
 
@@ -669,9 +669,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018              [Page 12]
+Larose & Dolson          Expires January 5, 2019               [Page 12]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    how well an identifier satisfies a given property; care should be
@@ -725,9 +725,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018              [Page 13]
+Larose & Dolson          Expires January 5, 2019               [Page 13]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    However, it may be possible to spoof the IP address, particularly for
@@ -781,9 +781,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018              [Page 14]
+Larose & Dolson          Expires January 5, 2019               [Page 14]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    3.  The User Equipment accesses the CAPPORT API to receive parameters
@@ -837,9 +837,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018              [Page 15]
+Larose & Dolson          Expires January 5, 2019               [Page 15]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    9.  The User Equipment accesses the external network.
@@ -893,9 +893,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018              [Page 16]
+Larose & Dolson          Expires January 5, 2019               [Page 16]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
    The API must ensure the integrity of this information, as well as its
@@ -949,9 +949,9 @@ Internet-Draft            CAPPORT Architecture                 June 2018
 
 
 
-Larose & Dolson         Expires December 31, 2018              [Page 17]
+Larose & Dolson          Expires January 5, 2019               [Page 17]
 
-Internet-Draft            CAPPORT Architecture                 June 2018
+Internet-Draft            CAPPORT Architecture                 July 2018
 
 
 8.2.  Informative References
@@ -1005,4 +1005,4 @@ Authors' Addresses
 
 
 
-Larose & Dolson         Expires December 31, 2018              [Page 18]
+Larose & Dolson          Expires January 5, 2019               [Page 18]

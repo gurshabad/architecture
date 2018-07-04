@@ -26,7 +26,7 @@ body {
   font-weight: bold;
   color: #333;
   line-height: 100%;
-  margin: 0.8em 0 0.3em;
+  margin: 1.2em 0 0.3em;
 }
 .title, #rfc\.title h1 { font-size: 32px; }
 h1, section h1, h2, section h2, section h3, nav h2 { font-size: 20px; }
@@ -165,12 +165,17 @@ a[href]:hover {
   background-color: #eee;
 }
 
-ol, ul, li, p {
+p, ol, ul, li {
   padding: 0;
-  margin: 0.5em 0 0.5em 2em;
 }
-li, p {
-  margin-left: 0;
+p {
+  margin: 0.5em 0;
+}
+ol, ul {
+  margin: 0.2em 0 0.2em 2em;
+}
+li {
+  margin: 0.2em 0;
 }
 address {
   font-style: normal;
@@ -321,7 +326,7 @@ ul.toc li {
 
   <meta name="dct.creator" content="Larose, K. and D. Dolson" />
   <meta name="dct.identifier" content="urn:ietf:id:draft-ietf-capport-architecture-02" />
-  <meta name="dct.issued" scheme="ISO8601" content="2018-29" />
+  <meta name="dct.issued" scheme="ISO8601" content="2018-04" />
   <meta name="dct.abstract" content="This document aims to document consensus on the CAPPORT architecture.  DHCP or Router Advertisements, an optional signaling protocol, and an HTTP API are used to provide the solution. The role of Provisioning Domains (PvDs) is described.  " />
   <meta name="description" content="This document aims to document consensus on the CAPPORT architecture.  DHCP or Router Advertisements, an optional signaling protocol, and an HTTP API are used to provide the solution. The role of Provisioning Domains (PvDs) is described.  " />
 
@@ -345,8 +350,8 @@ ul.toc li {
 <td class="right">D. Dolson</td>
 </tr>
 <tr>
-<td class="left">Expires: December 31, 2018</td>
-<td class="right">June 29, 2018</td>
+<td class="left">Expires: January 5, 2019</td>
+<td class="right">July 4, 2018</td>
 </tr>
 
     	
@@ -362,7 +367,7 @@ ul.toc li {
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on December 31, 2018.</p>
+<p>This Internet-Draft will expire on January 5, 2019.</p>
 <h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
 <p>Copyright (c) 2018 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
 <p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
@@ -624,7 +629,7 @@ o . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . o
 <h1 id="rfc.section.3">
 <a href="#rfc.section.3">3.</a> <a href="#ue_identity" id="ue_identity">User Equipment Identity</a>
 </h1>
-<p id="rfc.section.3.p.1">Multiple components in the architecture interact with both the User Equipment and each other. Since the User Equipment is the focus of these interactions, the components must be able to both identify the user equipment from their interactions with it, and be able to agree on the identify of the user equipment when interacting with each other.  </p>
+<p id="rfc.section.3.p.1">Multiple components in the architecture interact with both the User Equipment and each other. Since the User Equipment is the focus of these interactions, the components must be able to both identify the user equipment from their interactions with it, and be able to agree on the identity of the user equipment when interacting with each other.  </p>
 <p id="rfc.section.3.p.2">The methods by which the components interact restrict the type of information that may be used as an identifying characteristics. This section discusses the identifying characteristics.  </p>
 <h1 id="rfc.section.3.1">
 <a href="#rfc.section.3.1">3.1.</a> <a href="#id_identifiers" id="id_identifiers">Identifiers</a>
@@ -656,7 +661,7 @@ o . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . o
 <h1 id="rfc.section.3.2.3">
 <a href="#rfc.section.3.2.3">3.2.3.</a> <a href="#id_recommended_visible_api" id="id_recommended_visible_api">Visible to the API</a>
 </h1>
-<p id="rfc.section.3.2.3.p.1">Since the API will need to perform operations which rely on the identify of the user equipment, such as query whether it is captive, the API needs to be able to relate requests to the User Equipment making the request.  </p>
+<p id="rfc.section.3.2.3.p.1">Since the API will need to perform operations which rely on the identity of the user equipment, such as query whether it is captive, the API needs to be able to relate requests to the User Equipment making the request.  </p>
 <h1 id="rfc.section.3.2.4">
 <a href="#rfc.section.3.2.4">3.2.4.</a> <a href="#id_recommended_visible_ed" id="id_recommended_visible_ed">Visible to the Enforcement Device</a>
 </h1>
