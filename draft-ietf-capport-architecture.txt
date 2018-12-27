@@ -9,7 +9,7 @@ Expires: June 30, 2019                                 December 27, 2018
 
 
                           CAPPORT Architecture
-                   draft-ietf-capport-architecture-02
+                   draft-ietf-capport-architecture-03
 
 Abstract
 
