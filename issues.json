@@ -1,6 +1,210 @@
 [
 
   {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/26",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/26/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/26/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/26/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/26",
+    "id": 426584875,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjY1NDA1MjM1",
+    "number": 26,
+    "title": "Initial appendix work",
+    "user": {
+      "login": "thpts",
+      "id": 38018420,
+      "node_id": "MDQ6VXNlcjM4MDE4NDIw",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/38018420?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thpts",
+      "html_url": "https://github.com/thpts",
+      "followers_url": "https://api.github.com/users/thpts/followers",
+      "following_url": "https://api.github.com/users/thpts/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thpts/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thpts/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thpts/subscriptions",
+      "organizations_url": "https://api.github.com/users/thpts/orgs",
+      "repos_url": "https://api.github.com/users/thpts/repos",
+      "events_url": "https://api.github.com/users/thpts/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thpts/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-03-28T16:16:57Z",
+    "updated_at": "2019-04-01T15:06:31Z",
+    "closed_at": "2019-04-01T15:06:31Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/26",
+      "html_url": "https://github.com/capport-wg/architecture/pull/26",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/26.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/26.patch"
+    },
+    "body": "As per the discussion on the doh and capport mailing lists, a first pass of describing at least two of the ways portals are detected."
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/25",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/25/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/25/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/25/events",
+    "html_url": "https://github.com/capport-wg/architecture/issues/25",
+    "id": 425876819,
+    "node_id": "MDU6SXNzdWU0MjU4NzY4MTk=",
+    "number": 25,
+    "title": "DoH, split horizon, and captive portals",
+    "user": {
+      "login": "martinthomson",
+      "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/martinthomson",
+      "html_url": "https://github.com/martinthomson",
+      "followers_url": "https://api.github.com/users/martinthomson/followers",
+      "following_url": "https://api.github.com/users/martinthomson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/martinthomson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/martinthomson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/martinthomson/subscriptions",
+      "organizations_url": "https://api.github.com/users/martinthomson/orgs",
+      "repos_url": "https://api.github.com/users/martinthomson/repos",
+      "events_url": "https://api.github.com/users/martinthomson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/martinthomson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-03-27T10:26:42Z",
+    "updated_at": "2019-03-28T09:04:00Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "body": "In the case that access to an external DNS resolver is permitted, this could complicate the process of contacting the API server.  A recommendation to disable that might be wise.\r\n\r\n(I only included the DoH thing in the title because everyone needs a DoH issue, but this is not really one of those.)"
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/24",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/24/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/24/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/24/events",
+    "html_url": "https://github.com/capport-wg/architecture/issues/24",
+    "id": 394923034,
+    "node_id": "MDU6SXNzdWUzOTQ5MjMwMzQ=",
+    "number": 24,
+    "title": "API=closed, network=open",
+    "user": {
+      "login": "martinthomson",
+      "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/martinthomson",
+      "html_url": "https://github.com/martinthomson",
+      "followers_url": "https://api.github.com/users/martinthomson/followers",
+      "following_url": "https://api.github.com/users/martinthomson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/martinthomson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/martinthomson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/martinthomson/subscriptions",
+      "organizations_url": "https://api.github.com/users/martinthomson/orgs",
+      "repos_url": "https://api.github.com/users/martinthomson/repos",
+      "events_url": "https://api.github.com/users/martinthomson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/martinthomson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-12-31T03:15:20Z",
+    "updated_at": "2019-01-02T18:35:33Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "body": "David Bird points out:\r\n\r\n> The section titled  \"Risk of Nuisance Captive Portal\" should really be\r\n> talking about networks that USE the API and have NO network integration\r\n> (e.g. Captive by API only, not by any network enforcement function).\r\n\r\nThis is a case we might address.\r\n\r\nWe might reason about this by comparison with imperfect blocking.  Say that a network failed to block your VPN provider, you might see no problem with existing probes if you only used the VPN.  Though many network stacks seem to like to probe before allowing any traffic, this might still happen."
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/23",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/23/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/23/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/23/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/23",
+    "id": 394448917,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQxMTk0MDM3",
+    "number": 23,
+    "title": "Update version to 03",
+    "user": {
+      "login": "klarose",
+      "id": 23175939,
+      "node_id": "MDQ6VXNlcjIzMTc1OTM5",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/23175939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/klarose",
+      "html_url": "https://github.com/klarose",
+      "followers_url": "https://api.github.com/users/klarose/followers",
+      "following_url": "https://api.github.com/users/klarose/following{/other_user}",
+      "gists_url": "https://api.github.com/users/klarose/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/klarose/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/klarose/subscriptions",
+      "organizations_url": "https://api.github.com/users/klarose/orgs",
+      "repos_url": "https://api.github.com/users/klarose/repos",
+      "events_url": "https://api.github.com/users/klarose/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/klarose/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-27T17:24:42Z",
+    "updated_at": "2018-12-27T17:24:51Z",
+    "closed_at": "2018-12-27T17:24:51Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/23",
+      "html_url": "https://github.com/capport-wg/architecture/pull/23",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/23.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/23.patch"
+    },
+    "body": ""
+  },
+  {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/22",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
     "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/22/labels{/name}",
@@ -149,9 +353,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 4,
     "created_at": "2018-12-16T15:39:08Z",
-    "updated_at": "2018-12-17T17:50:14Z",
+    "updated_at": "2019-03-27T13:44:59Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "pull_request": {
@@ -502,17 +706,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2018-07-17T15:28:51Z",
-    "updated_at": "2018-07-17T15:28:51Z",
-    "closed_at": null,
+    "updated_at": "2018-12-31T02:59:05Z",
+    "closed_at": "2018-12-31T02:59:05Z",
     "author_association": "CONTRIBUTOR",
     "body": "There are networks that want to selectively block things.  We aren't going to get consensus on whether that is good practice, but we do have consensus that we don't provide protocol mechanisms for communicating about selective blocking.  Document that fact."
   },
@@ -1000,17 +1204,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 3,
     "created_at": "2017-11-08T21:17:07Z",
-    "updated_at": "2018-03-20T14:52:08Z",
-    "closed_at": null,
+    "updated_at": "2019-01-02T13:34:09Z",
+    "closed_at": "2019-01-02T13:34:09Z",
     "author_association": "CONTRIBUTOR",
     "body": "Does PvD mechanism deliver the capport state, or a pointer to the capport API, from which capport state is retrieved?"
   },
