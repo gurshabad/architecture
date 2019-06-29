@@ -5,11 +5,11 @@
 Internet Engineering Task Force                                K. Larose
 Internet-Draft                                                  Agilicus
 Intended status: Informational                                 D. Dolson
-Expires: October 3, 2019                                   April 1, 2018
+Expires: December 31, 2019                                 June 29, 2019
 
 
                           CAPPORT Architecture
-                   draft-ietf-capport-architecture-03
+                   draft-ietf-capport-architecture-04
 
 Abstract
 
@@ -33,11 +33,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on October 3, 2019.
+   This Internet-Draft will expire on December 31, 2019.
 
 Copyright Notice
 
-   Copyright (c) 2018 IETF Trust and the persons identified as the
+   Copyright (c) 2019 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Larose & Dolson          Expires October 3, 2019                [Page 1]
+Larose & Dolson         Expires December 31, 2019               [Page 1]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
 Table of Contents
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Larose & Dolson          Expires October 3, 2019                [Page 2]
+Larose & Dolson         Expires December 31, 2019               [Page 2]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    by the network operator, such as reading advertisements, accepting an
@@ -165,9 +165,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019                [Page 3]
+Larose & Dolson         Expires December 31, 2019               [Page 3]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
       is required to escape captivity.  DHCP, DHCPv6, and Router-
@@ -221,9 +221,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019                [Page 4]
+Larose & Dolson         Expires December 31, 2019               [Page 4]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    Captive Portal Server: The web server providing a user interface for
@@ -277,9 +277,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019                [Page 5]
+Larose & Dolson         Expires December 31, 2019               [Page 5]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    the captive portal web application, and (c) legacy devices must
@@ -333,9 +333,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019                [Page 6]
+Larose & Dolson         Expires December 31, 2019               [Page 6]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    information.  The User Equipment is expected to make this query upon
@@ -389,9 +389,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019                [Page 7]
+Larose & Dolson         Expires December 31, 2019               [Page 7]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    o  Blocks (discards) traffic for disallowed User Equipment.
@@ -445,9 +445,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019                [Page 8]
+Larose & Dolson         Expires December 31, 2019               [Page 8]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    The Captive Portal Signaling Protocol does not provide any means of
@@ -501,9 +501,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019                [Page 9]
+Larose & Dolson         Expires December 31, 2019               [Page 9]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    o  During provisioning (e.g., DHCP), the User Equipment acquires the
@@ -557,9 +557,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019               [Page 10]
+Larose & Dolson         Expires December 31, 2019              [Page 10]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
 3.2.  Recommended Properties
@@ -613,9 +613,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019               [Page 11]
+Larose & Dolson         Expires December 31, 2019              [Page 11]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
 3.2.3.  Visible to the API
@@ -669,9 +669,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019               [Page 12]
+Larose & Dolson         Expires December 31, 2019              [Page 12]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    Another consideration related to uniqueness of the User Equipment is
@@ -725,9 +725,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019               [Page 13]
+Larose & Dolson         Expires December 31, 2019              [Page 13]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    the multiple addresses together into one view of the subscriber?  An
@@ -781,9 +781,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019               [Page 14]
+Larose & Dolson         Expires December 31, 2019              [Page 14]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    2.  The User Equipment is communicating with the outside network
@@ -837,9 +837,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019               [Page 15]
+Larose & Dolson         Expires December 31, 2019              [Page 15]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    provide credentials to an attacker.  Browsers can authenticate
@@ -893,9 +893,9 @@ Internet-Draft            CAPPORT Architecture                April 2018
 
 
 
-Larose & Dolson          Expires October 3, 2019               [Page 16]
+Larose & Dolson         Expires December 31, 2019              [Page 16]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
 8.  References
@@ -921,8 +921,8 @@ Internet-Draft            CAPPORT Architecture                April 2018
    [I-D.ietf-intarea-provisioning-domains]
               Pfister, P., Vyncke, E., Pauly, T., Schinazi, D., and W.
               Shao, "Discovering Provisioning Domain Names and Data",
-              draft-ietf-intarea-provisioning-domains-04 (work in
-              progress), March 2019.
+              draft-ietf-intarea-provisioning-domains-05 (work in
+              progress), June 2019.
 
    [I-D.nottingham-capport-problem]
               Nottingham, M., "Captive Portals Problem Statement",
@@ -949,9 +949,9 @@ Appendix A.  Existing captive portal detection implementations
 
 
 
-Larose & Dolson          Expires October 3, 2019               [Page 17]
+Larose & Dolson         Expires December 31, 2019              [Page 17]
 
-Internet-Draft            CAPPORT Architecture                April 2018
+Internet-Draft            CAPPORT Architecture                 June 2019
 
 
    through or decide to impersonate, leading to the device having a
@@ -1005,4 +1005,4 @@ Authors' Addresses
 
 
 
-Larose & Dolson          Expires October 3, 2019               [Page 18]
+Larose & Dolson         Expires December 31, 2019              [Page 18]
