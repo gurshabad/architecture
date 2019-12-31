@@ -400,6 +400,7 @@
 <link href="#rfc.section.4" rel="Chapter" title="4 Solution Workflow">
 <link href="#rfc.section.4.1" rel="Chapter" title="4.1 Initial Connection">
 <link href="#rfc.section.4.2" rel="Chapter" title="4.2 Conditions About to Expire">
+<link href="#rfc.section.4.3" rel="Chapter" title="4.3 Handling of Changes in Portal URI">
 <link href="#rfc.section.5" rel="Chapter" title="5 Acknowledgments">
 <link href="#rfc.section.6" rel="Chapter" title="6 IANA Considerations">
 <link href="#rfc.section.7" rel="Chapter" title="7 Security Considerations">
@@ -420,7 +421,7 @@
 
   <meta name="dct.creator" content="Larose, K. and D. Dolson" />
   <meta name="dct.identifier" content="urn:ietf:id:draft-ietf-capport-architecture-04" />
-  <meta name="dct.issued" scheme="ISO8601" content="2019-29" />
+  <meta name="dct.issued" scheme="ISO8601" content="2019-31" />
   <meta name="dct.abstract" content="This document aims to document consensus on the CAPPORT architecture.  DHCP or Router Advertisements, an optional signaling protocol, and an HTTP API are used to provide the solution. The role of Provisioning Domains (PvDs) is described.  " />
   <meta name="description" content="This document aims to document consensus on the CAPPORT architecture.  DHCP or Router Advertisements, an optional signaling protocol, and an HTTP API are used to provide the solution. The role of Provisioning Domains (PvDs) is described.  " />
 
@@ -444,8 +445,8 @@
 <td class="right">D. Dolson</td>
 </tr>
 <tr>
-<td class="left">Expires: July 1, 2020</td>
-<td class="right">December 29, 2019</td>
+<td class="left">Expires: July 3, 2020</td>
+<td class="right">December 31, 2019</td>
 </tr>
 
     	
@@ -461,7 +462,7 @@
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on July 1, 2020.</p>
+<p>This Internet-Draft will expire on July 3, 2020.</p>
 <h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
 <p>Copyright (c) 2019 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
 <p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
@@ -522,6 +523,8 @@
 <ul><li>4.1.   <a href="#rfc.section.4.1">Initial Connection</a>
 </li>
 <li>4.2.   <a href="#rfc.section.4.2">Conditions About to Expire</a>
+</li>
+<li>4.3.   <a href="#rfc.section.4.3">Handling of Changes in Portal URI</a>
 </li>
 </ul><li>5.   <a href="#rfc.section.5">Acknowledgments</a>
 </li>
@@ -820,6 +823,18 @@ o . . . . . . . . . . . . . . . . . . .| |. . . . . . . . . . . o
 </ol>
 
 <p> </p>
+<h1 id="rfc.section.4.3">
+<a href="#rfc.section.4.3">4.3.</a> Handling of Changes in Portal URI</h1>
+<p id="rfc.section.4.3.p.1">A different Captive Portal API URI could be returned in the following cases:</p>
+<p></p>
+
+<ul>
+<li>If DHCP is used, a lease renewal/rebind may return a different Captive Portal API URI.</li>
+<li>If RA is used, a new Captive Portal API URI may be specified in a new RA message received by end user equipment.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.4.3.p.3">Whenever a new Portal URI is received by end user equipment, it SHOULD discard the old URI and use the new one for future requests to the API.</p>
 <h1 id="rfc.section.5">
 <a href="#rfc.section.5">5.</a> <a href="#Acknowledgments" id="Acknowledgments">Acknowledgments</a>
 </h1>
