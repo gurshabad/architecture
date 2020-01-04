@@ -5,7 +5,9 @@
 Internet Engineering Task Force                                K. Larose
 Internet-Draft                                                  Agilicus
 Intended status: Informational                                 D. Dolson
-Expires: July 7, 2020                                    January 4, 2020
+Expires: July 7, 2020
+                                                                  H. Liu
+                                                         January 4, 2020
 
 
                           CAPPORT Architecture
@@ -47,20 +49,21 @@ Copyright Notice
    carefully, as they describe your rights and restrictions with respect
    to this document.  Code Components extracted from this document must
    include Simplified BSD License text as described in Section 4.e of
-   the Trust Legal Provisions and are provided without warranty as
-   described in the Simplified BSD License.
 
 
 
 
-Larose & Dolson           Expires July 7, 2020                  [Page 1]
+Larose, et al.            Expires July 7, 2020                  [Page 1]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
 
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
 Table of Contents
 
-   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
      1.1.  Requirements Language . . . . . . . . . . . . . . . . . .   4
      1.2.  Terminology . . . . . . . . . . . . . . . . . . . . . . .   4
    2.  Components  . . . . . . . . . . . . . . . . . . . . . . . . .   5
@@ -69,7 +72,7 @@ Table of Contents
        2.2.1.  DHCP or Router Advertisements . . . . . . . . . . . .   6
        2.2.2.  Provisioning Domains  . . . . . . . . . . . . . . . .   6
      2.3.  Captive Portal API Server . . . . . . . . . . . . . . . .   7
-     2.4.  Captive Portal Enforcement  . . . . . . . . . . . . . . .   7
+     2.4.  Captive Portal Enforcement  . . . . . . . . . . . . . . .   8
      2.5.  Captive Portal Signal . . . . . . . . . . . . . . . . . .   8
      2.6.  Component Diagram . . . . . . . . . . . . . . . . . . . .   9
    3.  User Equipment Identity . . . . . . . . . . . . . . . . . . .  11
@@ -101,19 +104,21 @@ Table of Contents
    Appendix A.  Existing captive portal detection implementations  .  18
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  19
 
+
+
+
+
+
+Larose, et al.            Expires July 7, 2020                  [Page 2]
+
+Internet-Draft            CAPPORT Architecture              January 2020
+
+
 1.  Introduction
 
    In this document, "Captive Portal" is used to describe a network to
    which a device may be voluntarily attached, such that network access
    is limited until some requirements have been fulfilled.  Typically a
-
-
-
-Larose & Dolson           Expires July 7, 2020                  [Page 2]
-
-Internet-Draft            CAPPORT Architecture              January 2020
-
-
    user is required to use a web browser to fulfill requirements imposed
    by the network operator, such as reading advertisements, accepting an
    acceptable-use policy, or providing some form of credentials.
@@ -156,19 +161,19 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
    A side-benefit of the architecture described in this document is that
    devices without user interfaces are able to identify parameters of
+
+
+
+
+Larose, et al.            Expires July 7, 2020                  [Page 3]
+
+Internet-Draft            CAPPORT Architecture              January 2020
+
+
    captivity.  However, this document does not yet describe a mechanism
    for such devices to escape captivity.
 
    The architecture uses the following mechanisms:
-
-
-
-
-
-Larose & Dolson           Expires July 7, 2020                  [Page 3]
-
-Internet-Draft            CAPPORT Architecture              January 2020
-
 
    o  Network provisioning protocols provide end-user devices with a URI
       for the API that end-user devices query for information about what
@@ -213,18 +218,16 @@ Internet-Draft            CAPPORT Architecture              January 2020
    Captive Portal Conditions: site-specific requirements that a user or
    device must satisfy in order to gain access to the wider network.
 
-   Captive Portal Enforcement: The network equipment which enforces the
-   traffic restriction.
 
 
 
-
-
-
-Larose & Dolson           Expires July 7, 2020                  [Page 4]
+Larose, et al.            Expires July 7, 2020                  [Page 4]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
+
+   Captive Portal Enforcement: The network equipment which enforces the
+   traffic restriction.
 
    Captive Portal User Equipment: Also known as User Equipment.  A
    device which has voluntarily joined a network for purposes of
@@ -271,16 +274,17 @@ Internet-Draft            CAPPORT Architecture              January 2020
    o  MAY restrict application access to networks not granting full
       network access.  E.g., a device connected to a mobile network may
       be connecting to a WiFi network; the operating system MAY avoid
-      updating the default route until network access restrictions have
-      been lifted (excepting access to the Captive Portal server).  This
-      has been termed "make before break".
 
 
 
-Larose & Dolson           Expires July 7, 2020                  [Page 5]
+Larose, et al.            Expires July 7, 2020                  [Page 5]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
+
+      updating the default route until network access restrictions have
+      been lifted (excepting access to the Captive Portal server).  This
+      has been termed "make before break".
 
    None of the above requirements are mandatory because (a) we do not
    wish to say users or devices must seek access beyond the captive
@@ -326,17 +330,17 @@ Internet-Draft            CAPPORT Architecture              January 2020
    should provide a different result when access is not restricted.
    E.g., key="captivePortal" and value="".
 
-   This JSON file is extensible, allowing new key-value pairs to
-   indicate such things as network access expiry time, URI for API
-   access by IOT devices, etc.
 
 
 
-
-Larose & Dolson           Expires July 7, 2020                  [Page 6]
+Larose, et al.            Expires July 7, 2020                  [Page 6]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
+
+   This JSON file is extensible, allowing new key-value pairs to
+   indicate such things as network access expiry time, URI for API
+   access by IOT devices, etc.
 
    The PvD server MUST support multiple (repeated) queries from each
    User Equipment, always returning the current captive portal
@@ -378,6 +382,18 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
    This document does not specify the details of the API.
 
+
+
+
+
+
+
+
+Larose, et al.            Expires July 7, 2020                  [Page 7]
+
+Internet-Draft            CAPPORT Architecture              January 2020
+
+
 2.4.  Captive Portal Enforcement
 
    The Captive Portal Enforcement component restricts network access to
@@ -386,13 +402,6 @@ Internet-Draft            CAPPORT Architecture              January 2020
    denied general network access until it has performed some action.
 
    The Captive Portal Enforcement component:
-
-
-
-Larose & Dolson           Expires July 7, 2020                  [Page 7]
-
-Internet-Draft            CAPPORT Architecture              January 2020
-
 
    o  Allows traffic through for allowed User Equipment.
 
@@ -434,21 +443,18 @@ Internet-Draft            CAPPORT Architecture              January 2020
        relying solely on rate limits to prevent problems, a good
        protocol will strive to limit the feasibility of such attacks.
 
+
+
+Larose, et al.            Expires July 7, 2020                  [Page 8]
+
+Internet-Draft            CAPPORT Architecture              January 2020
+
+
    2.  It SHOULD be possible to send the notification before the captive
        portal closes.  This will help ensure seamless connectivity for
        the user, as the User Equipment will not need to wait for a
        network failure to refresh its login.  On receipt of preemptive
        notification, the User Equipment can prompt the user to refresh.
-
-
-
-
-
-
-Larose & Dolson           Expires July 7, 2020                  [Page 8]
-
-Internet-Draft            CAPPORT Architecture              January 2020
-
 
    3.  The signal SHOULD NOT include any information other than an
        indication that traffic is restricted, which can be used as a
@@ -495,13 +501,7 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-
-
-
-
-
-
-Larose & Dolson           Expires July 7, 2020                  [Page 9]
+Larose, et al.            Expires July 7, 2020                  [Page 9]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -557,7 +557,7 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose & Dolson           Expires July 7, 2020                 [Page 10]
+Larose, et al.            Expires July 7, 2020                 [Page 10]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -613,7 +613,7 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose & Dolson           Expires July 7, 2020                 [Page 11]
+Larose, et al.            Expires July 7, 2020                 [Page 11]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -669,7 +669,7 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose & Dolson           Expires July 7, 2020                 [Page 12]
+Larose, et al.            Expires July 7, 2020                 [Page 12]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -725,7 +725,7 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose & Dolson           Expires July 7, 2020                 [Page 13]
+Larose, et al.            Expires July 7, 2020                 [Page 13]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -781,7 +781,7 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose & Dolson           Expires July 7, 2020                 [Page 14]
+Larose, et al.            Expires July 7, 2020                 [Page 14]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -837,7 +837,7 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose & Dolson           Expires July 7, 2020                 [Page 15]
+Larose, et al.            Expires July 7, 2020                 [Page 15]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -893,7 +893,7 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose & Dolson           Expires July 7, 2020                 [Page 16]
+Larose, et al.            Expires July 7, 2020                 [Page 16]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -949,7 +949,7 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose & Dolson           Expires July 7, 2020                 [Page 17]
+Larose, et al.            Expires July 7, 2020                 [Page 17]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -1005,7 +1005,7 @@ Appendix A.  Existing captive portal detection implementations
 
 
 
-Larose & Dolson           Expires July 7, 2020                 [Page 18]
+Larose, et al.            Expires July 7, 2020                 [Page 18]
 
 Internet-Draft            CAPPORT Architecture              January 2020
 
@@ -1030,6 +1030,9 @@ Authors' Addresses
    Email: ddolson@acm.org
 
 
+   Heng Liu
+
+   Email: liucougar@google.com
 
 
 
@@ -1058,7 +1061,4 @@ Authors' Addresses
 
 
 
-
-
-
-Larose & Dolson           Expires July 7, 2020                 [Page 19]
+Larose, et al.            Expires July 7, 2020                 [Page 19]
