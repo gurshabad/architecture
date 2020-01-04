@@ -1,6 +1,216 @@
 [
 
   {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/38",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/38/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/38/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/38/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/38",
+    "id": 545257231,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5MTk0NDM5",
+    "number": 38,
+    "title": "Change year to 2020",
+    "user": {
+      "login": "liucougar",
+      "id": 58826,
+      "node_id": "MDQ6VXNlcjU4ODI2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58826?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/liucougar",
+      "html_url": "https://github.com/liucougar",
+      "followers_url": "https://api.github.com/users/liucougar/followers",
+      "following_url": "https://api.github.com/users/liucougar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/liucougar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/liucougar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/liucougar/subscriptions",
+      "organizations_url": "https://api.github.com/users/liucougar/orgs",
+      "repos_url": "https://api.github.com/users/liucougar/repos",
+      "events_url": "https://api.github.com/users/liucougar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/liucougar/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-04T08:14:30Z",
+    "updated_at": "2020-01-04T21:31:31Z",
+    "closed_at": "2020-01-04T21:31:31Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/38",
+      "html_url": "https://github.com/capport-wg/architecture/pull/38",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/38.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/38.patch"
+    },
+    "body": "Closes #37"
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/37",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/37/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/37/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/37/events",
+    "html_url": "https://github.com/capport-wg/architecture/issues/37",
+    "id": 545256982,
+    "node_id": "MDU6SXNzdWU1NDUyNTY5ODI=",
+    "number": 37,
+    "title": "Error: Cannot handle a <date> with year different than this year, and no month.  Using today's date.",
+    "user": {
+      "login": "liucougar",
+      "id": 58826,
+      "node_id": "MDQ6VXNlcjU4ODI2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58826?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/liucougar",
+      "html_url": "https://github.com/liucougar",
+      "followers_url": "https://api.github.com/users/liucougar/followers",
+      "following_url": "https://api.github.com/users/liucougar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/liucougar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/liucougar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/liucougar/subscriptions",
+      "organizations_url": "https://api.github.com/users/liucougar/orgs",
+      "repos_url": "https://api.github.com/users/liucougar/repos",
+      "events_url": "https://api.github.com/users/liucougar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/liucougar/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-04T08:11:48Z",
+    "updated_at": "2020-01-04T21:31:31Z",
+    "closed_at": "2020-01-04T21:31:31Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "<date year=\"2019\" /> is causing the date error when converting xml to html using xml2rfc"
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/36",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/36/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/36/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/36/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/36",
+    "id": 545256503,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5MTkzOTAy",
+    "number": 36,
+    "title": "Add Heng Liu to authors list",
+    "user": {
+      "login": "liucougar",
+      "id": 58826,
+      "node_id": "MDQ6VXNlcjU4ODI2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58826?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/liucougar",
+      "html_url": "https://github.com/liucougar",
+      "followers_url": "https://api.github.com/users/liucougar/followers",
+      "following_url": "https://api.github.com/users/liucougar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/liucougar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/liucougar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/liucougar/subscriptions",
+      "organizations_url": "https://api.github.com/users/liucougar/orgs",
+      "repos_url": "https://api.github.com/users/liucougar/repos",
+      "events_url": "https://api.github.com/users/liucougar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/liucougar/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-04T08:04:47Z",
+    "updated_at": "2020-01-04T08:04:47Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/36",
+      "html_url": "https://github.com/capport-wg/architecture/pull/36",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/36.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/36.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/35",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/35/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/35/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/35/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/35",
+    "id": 544187861,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU4MzU2NjA5",
+    "number": 35,
+    "title": "bump version",
+    "user": {
+      "login": "klarose",
+      "id": 23175939,
+      "node_id": "MDQ6VXNlcjIzMTc1OTM5",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/23175939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/klarose",
+      "html_url": "https://github.com/klarose",
+      "followers_url": "https://api.github.com/users/klarose/followers",
+      "following_url": "https://api.github.com/users/klarose/following{/other_user}",
+      "gists_url": "https://api.github.com/users/klarose/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/klarose/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/klarose/subscriptions",
+      "organizations_url": "https://api.github.com/users/klarose/orgs",
+      "repos_url": "https://api.github.com/users/klarose/repos",
+      "events_url": "https://api.github.com/users/klarose/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/klarose/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-12-31T13:20:46Z",
+    "updated_at": "2019-12-31T13:21:57Z",
+    "closed_at": "2019-12-31T13:20:52Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/35",
+      "html_url": "https://github.com/capport-wg/architecture/pull/35",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/35.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/35.patch"
+    },
+    "body": "Bump the version of the draft in preparation for submission.\r\n\r\nThis version picks up:\r\n - An editorial change related to pvds\r\n - A description of what to do when the captive portal URI changes."
+  },
+  {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/34",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
     "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/34/labels{/name}",
@@ -97,7 +307,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2019-12-29T16:54:22Z",
-    "updated_at": "2019-12-29T16:54:31Z",
+    "updated_at": "2020-01-02T16:12:05Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "pull_request": {
@@ -151,7 +361,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2019-12-29T16:35:53Z",
-    "updated_at": "2019-12-29T16:54:51Z",
+    "updated_at": "2020-01-01T23:26:06Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "pull_request": {
@@ -399,9 +609,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2019-11-20T01:25:21Z",
-    "updated_at": "2019-12-31T06:44:33Z",
+    "updated_at": "2020-01-01T23:34:16Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "body": "Based on discussion in Singapore, the group decided to recommend (not require) that URLs use names that can be resolved from the public DNS (no split horizon, etc...).  The content served from those URLs should also not be dependent on the network path, but instead the URL would include all information necessary to produce the resource."
@@ -691,7 +901,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-12-27T17:24:42Z",
-    "updated_at": "2018-12-27T17:24:51Z",
+    "updated_at": "2019-12-31T13:22:03Z",
     "closed_at": "2018-12-27T17:24:51Z",
     "author_association": "CONTRIBUTOR",
     "pull_request": {
@@ -1421,7 +1631,10 @@
       "patch_url": "https://github.com/capport-wg/architecture/pull/9.patch"
     },
     "body": "We need to discuss what information will be used to identify the UE from\r\nthe perspective of the various components in the system. This updates\r\nthe draft to discuss this concept, including desired properties of the\r\nidentifier and some examples.\r\n\r\nThis aims to address issue 5  (https://github.com/capport-wg/architecture/issues/5)"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/8",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
@@ -1619,10 +1832,7 @@
     "closed_at": "2018-06-29T23:16:37Z",
     "author_association": "CONTRIBUTOR",
     "body": "E.g., MAC address or IP address? Or?\r\nUse of MAC address means enforcement must be on the local layer2 segment.\r\nUse of IP address has complexity around the user device randomly changing the IPv6 address."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/4",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
