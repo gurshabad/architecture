@@ -136,7 +136,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -145,8 +145,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2020-01-04T08:04:47Z",
-    "updated_at": "2020-01-04T08:04:47Z",
-    "closed_at": null,
+    "updated_at": "2020-01-04T21:33:39Z",
+    "closed_at": "2020-01-04T21:33:38Z",
     "author_association": "CONTRIBUTOR",
     "pull_request": {
       "url": "https://api.github.com/repos/capport-wg/architecture/pulls/36",
@@ -298,7 +298,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -307,8 +307,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2019-12-29T16:54:22Z",
-    "updated_at": "2020-01-02T16:12:05Z",
-    "closed_at": null,
+    "updated_at": "2020-01-06T22:01:17Z",
+    "closed_at": "2020-01-06T22:01:17Z",
     "author_association": "CONTRIBUTOR",
     "pull_request": {
       "url": "https://api.github.com/repos/capport-wg/architecture/pulls/33",
@@ -352,7 +352,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -361,8 +361,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2019-12-29T16:35:53Z",
-    "updated_at": "2020-01-01T23:26:06Z",
-    "closed_at": null,
+    "updated_at": "2020-01-06T22:01:36Z",
+    "closed_at": "2020-01-06T22:01:36Z",
     "author_association": "CONTRIBUTOR",
     "pull_request": {
       "url": "https://api.github.com/repos/capport-wg/architecture/pulls/32",
@@ -1318,17 +1318,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 3,
+    "comments": 4,
     "created_at": "2018-07-17T15:34:25Z",
-    "updated_at": "2019-11-28T08:18:48Z",
-    "closed_at": null,
+    "updated_at": "2020-01-06T04:15:59Z",
+    "closed_at": "2020-01-06T04:15:59Z",
     "author_association": "CONTRIBUTOR",
     "body": "Probably not a lot, except that future requests might go there.  Because we don't hold any state for these resources, that's probably OK."
   },
