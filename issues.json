@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/39",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/39/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/39/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/39/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/39",
+    "id": 555054556,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY3MDk2MTI1",
+    "number": 39,
+    "title": "Add context free URLs section",
+    "user": {
+      "login": "liucougar",
+      "id": 58826,
+      "node_id": "MDQ6VXNlcjU4ODI2",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58826?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/liucougar",
+      "html_url": "https://github.com/liucougar",
+      "followers_url": "https://api.github.com/users/liucougar/followers",
+      "following_url": "https://api.github.com/users/liucougar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/liucougar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/liucougar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/liucougar/subscriptions",
+      "organizations_url": "https://api.github.com/users/liucougar/orgs",
+      "repos_url": "https://api.github.com/users/liucougar/repos",
+      "events_url": "https://api.github.com/users/liucougar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/liucougar/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-01-25T07:29:54Z",
+    "updated_at": "2020-02-11T06:48:49Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/39",
+      "html_url": "https://github.com/capport-wg/architecture/pull/39",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/39.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/39.patch"
+    },
+    "body": "Closes #28"
+  },
+  {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/38",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
     "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/38/labels{/name}",
@@ -414,7 +468,7 @@
         "description": null
       }
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": {
       "login": "klarose",
@@ -459,10 +513,10 @@
       }
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2019-12-10T04:00:27Z",
-    "updated_at": "2019-12-29T15:46:22Z",
-    "closed_at": null,
+    "updated_at": "2020-01-06T22:02:44Z",
+    "closed_at": "2020-01-06T22:02:44Z",
     "author_association": "CONTRIBUTOR",
     "body": "This is a little inconsistent.  I see \"CAPPORT API\" and \"Captive Portal API\", but mostly just \"API\" or \"API server\".\r\n\r\nHaving a short form (API) seems useful.  The longer form probably needs to be \"Captive Portal API\" to avoid having to define what \"CAPPORT\" means.  There seems to be value in distinguishing between the API and the entity that provides it, so maybe the latter distinction is fine to leave alone."
   },
@@ -765,9 +819,9 @@
 
     ],
     "milestone": null,
-    "comments": 4,
+    "comments": 6,
     "created_at": "2019-03-27T10:26:42Z",
-    "updated_at": "2019-11-28T04:55:51Z",
+    "updated_at": "2020-01-29T10:50:12Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "body": "In the case that access to an external DNS resolver is permitted, this could complicate the process of contacting the API server.  A recommendation to disable that might be wise.\r\n\r\n(I only included the DoH thing in the title because everyone needs a DoH issue, but this is not really one of those.)"
@@ -806,7 +860,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": {
       "login": "klarose",
@@ -851,10 +905,10 @@
       }
     ],
     "milestone": null,
-    "comments": 3,
+    "comments": 4,
     "created_at": "2018-12-31T03:15:20Z",
-    "updated_at": "2019-12-29T16:13:44Z",
-    "closed_at": null,
+    "updated_at": "2020-01-06T22:03:52Z",
+    "closed_at": "2020-01-06T22:03:52Z",
     "author_association": "CONTRIBUTOR",
     "body": "David Bird points out:\r\n\r\n> The section titled  \"Risk of Nuisance Captive Portal\" should really be\r\n> talking about networks that USE the API and have NO network integration\r\n> (e.g. Captive by API only, not by any network enforcement function).\r\n\r\nThis is a case we might address.\r\n\r\nWe might reason about this by comparison with imperfect blocking.  Say that a network failed to block your VPN provider, you might see no problem with existing probes if you only used the VPN.  Though many network stacks seem to like to probe before allowing any traffic, this might still happen."
   },
@@ -1063,7 +1117,7 @@
     "milestone": null,
     "comments": 4,
     "created_at": "2018-12-16T15:39:08Z",
-    "updated_at": "2019-03-27T13:44:59Z",
+    "updated_at": "2020-02-12T02:15:06Z",
     "closed_at": null,
     "author_association": "CONTRIBUTOR",
     "pull_request": {
@@ -1510,17 +1564,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 4,
     "created_at": "2018-07-06T17:47:47Z",
-    "updated_at": "2018-07-06T23:05:55Z",
-    "closed_at": null,
+    "updated_at": "2020-01-28T22:47:17Z",
+    "closed_at": "2020-01-28T22:47:16Z",
     "author_association": "CONTRIBUTOR",
     "body": "As pointed out on the mailing list, there's a few places we refer to an HTTP API. Make sure we don't do that.\r\n\r\n>    This document aims to document consensus on the CAPPORT architecture.\r\n>   DHCP or Router Advertisements, an optional signaling protocol, and an\r\n>  HTTP API are used to provide the solution.  The role of Provisioning\r\n> Domains (PvDs) is described."
   },
@@ -1577,7 +1631,10 @@
       "patch_url": "https://github.com/capport-wg/architecture/pull/10.patch"
     },
     "body": "This PR attempts to deal with issue #8 by replacing references to ICMP with a generic signaling protocols, then specifying requirements for it."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/9",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
@@ -1631,10 +1688,7 @@
       "patch_url": "https://github.com/capport-wg/architecture/pull/9.patch"
     },
     "body": "We need to discuss what information will be used to identify the UE from\r\nthe perspective of the various components in the system. This updates\r\nthe draft to discuss this concept, including desired properties of the\r\nidentifier and some examples.\r\n\r\nThis aims to address issue 5  (https://github.com/capport-wg/architecture/issues/5)"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/8",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
