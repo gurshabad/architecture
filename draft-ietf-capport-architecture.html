@@ -623,8 +623,6 @@
 <li>SHOULD have a web browser so that the user may navigate the Captive Portal user interface.</li>
 <li>MAY restrict application access to networks not granting full network access. E.g., a device connected to a mobile network may be connecting to a WiFi network; the operating system MAY avoid updating the default route until network access restrictions have been lifted (excepting access to the Captive Portal server).  This has been termed "make before break".</li>
 </ul>
-
-<p> </p>
 <p id="rfc.section.2.1.p.4">None of the above requirements are mandatory because (a) we do not wish to say users or devices must seek access beyond the captive network, (b) the requirements may be fulfilled by manually visiting the captive portal web application, and (c) legacy devices must continue to be supported.  </p>
 <h1 id="rfc.section.2.2">
 <a href="#rfc.section.2.2">2.2.</a> <a href="#section_provisioning" id="section_provisioning">Provisioning Service</a>
@@ -815,8 +813,6 @@ o . . . . . . . . . . . . . . . . . . .| |. . . . . . . . . . . o
 <li>If the requirements have been satisfied, the access is permitted; otherwise the "Expired" behavior occurs.</li>
 <li>The User Equipment accesses the network until conditions Expire.</li>
 </ol>
-
-<p> </p>
 <h1 id="rfc.section.4.2">
 <a href="#rfc.section.4.2">4.2.</a> Conditions About to Expire</h1>
 <p id="rfc.section.4.2.p.1">This section describes a possible work-flow when access is about to expire.  </p>
@@ -831,8 +827,6 @@ o . . . . . . . . . . . . . . . . . . .| |. . . . . . . . . . . o
 <li>The User extends their access through the web-portal</li>
 <li>The User Equipment's access to the outside network continues uninterrupted</li>
 </ol>
-
-<p> </p>
 <h1 id="rfc.section.4.3">
 <a href="#rfc.section.4.3">4.3.</a> Handling of Changes in Portal URI</h1>
 <p id="rfc.section.4.3.p.1">A different Captive Portal API URI could be returned in the following cases:</p>
@@ -842,8 +836,6 @@ o . . . . . . . . . . . . . . . . . . .| |. . . . . . . . . . . o
 <li>If DHCP is used, a lease renewal/rebind may return a different Captive Portal API URI.</li>
 <li>If RA is used, a new Captive Portal API URI may be specified in a new RA message received by end user equipment.</li>
 </ul>
-
-<p> </p>
 <p id="rfc.section.4.3.p.3">Whenever a new Portal URI is received by end user equipment, it SHOULD discard the old URI and use the new one for future requests to the API.</p>
 <h1 id="rfc.section.5">
 <a href="#rfc.section.5">5.</a> <a href="#Acknowledgments" id="Acknowledgments">Acknowledgments</a>
