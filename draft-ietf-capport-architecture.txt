@@ -5,9 +5,9 @@
 Internet Engineering Task Force                                K. Larose
 Internet-Draft                                                  Agilicus
 Intended status: Informational                                 D. Dolson
-Expires: August 15, 2020
+Expires: 15 August 2020                                                 
                                                                   H. Liu
-                                                       February 12, 2020
+                                                        12 February 2020
 
 
                           CAPPORT Architecture
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 15, 2020.
+   This Internet-Draft will expire on 15 August 2020.
 
 Copyright Notice
 
@@ -43,23 +43,20 @@ Copyright Notice
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
-   Provisions Relating to IETF Documents
-   (https://trustee.ietf.org/license-info) in effect on the date of
-   publication of this document.  Please review these documents
-   carefully, as they describe your rights and restrictions with respect
-   to this document.  Code Components extracted from this document must
-   include Simplified BSD License text as described in Section 4.e of
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Simplified BSD License text
+   as described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Simplified BSD License.
 
 
 
-
-Larose, et al.           Expires August 15, 2020                [Page 1]
+Larose, et al.           Expires 15 August 2020                 [Page 1]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
-
-   the Trust Legal Provisions and are provided without warranty as
-   described in the Simplified BSD License.
 
 Table of Contents
 
@@ -109,7 +106,10 @@ Table of Contents
 
 
 
-Larose, et al.           Expires August 15, 2020                [Page 2]
+
+
+
+Larose, et al.           Expires 15 August 2020                 [Page 2]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -136,26 +136,26 @@ Internet-Draft            CAPPORT Architecture             February 2020
    portals that provides tools for addressing most of those problems.
    We are guided by these principles:
 
-   o  Solutions SHOULD NOT require the forging of responses from DNS or
+   *  Solutions SHOULD NOT require the forging of responses from DNS or
       HTTP servers, or any other protocol.  In particular, solutions
       SHOULD NOT require man-in-the-middle proxy of TLS traffic.
 
-   o  Solutions MUST operate at the layer of Internet Protocol (IP) or
+   *  Solutions MUST operate at the layer of Internet Protocol (IP) or
       above, not being specific to any particular access technology such
       as Cable, WiFi or 3GPP.
 
-   o  Solutions MAY allow a device to be alerted that it is in a captive
+   *  Solutions MAY allow a device to be alerted that it is in a captive
       network when attempting to use any application on the network.
 
-   o  Solutions SHOULD allow a device to learn that it is in a captive
+   *  Solutions SHOULD allow a device to learn that it is in a captive
       network before any application attempts to use the network.
 
-   o  The state of captivity SHOULD be explicitly available to devices
+   *  The state of captivity SHOULD be explicitly available to devices
       (in contrast to modification of DNS or HTTP, which is only
       indirectly machine-detectable by the client--by comparing
       responses to well-known queries with expected responses).
 
-   o  The architecture MUST provide a path of incremental migration,
+   *  The architecture MUST provide a path of incremental migration,
       acknowledging a huge variety of portals and end-user device
       implementations and software versions.
 
@@ -165,7 +165,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020                [Page 3]
+Larose, et al.           Expires 15 August 2020                 [Page 3]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -175,7 +175,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
    The architecture uses the following mechanisms:
 
-   o  Network provisioning protocols provide end-user devices with a URI
+   *  Network provisioning protocols provide end-user devices with a URI
       for the API that end-user devices query for information about what
       is required to escape captivity.  DHCP, DHCPv6, and Router-
       Advertisement options for this purpose are available in [RFC7710].
@@ -184,7 +184,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
       used.  A device MAY query this API at any time to determine
       whether the network is holding the device in a captive state.
 
-   o  End-user devices can be notified of captivity with Captive Portal
+   *  End-user devices can be notified of captivity with Captive Portal
       Signals in response to traffic.  This notification should work
       with any Internet protocol, not just clear-text HTTP.  This
       notification does not carry the portal URI; rather it provides a
@@ -192,7 +192,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
       This document will specify requirements for a signaling protocol
       which could generate Captive Portal Signals.
 
-   o  Receipt of a Captive Portal Signal informs an end-user device that
+   *  Receipt of a Captive Portal Signal informs an end-user device that
       it could be captive.  In response, the device MAY query the
       provisioned API to obtain information about the network state.
       The device MAY take immediate action to satisfy the portal
@@ -221,7 +221,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020                [Page 4]
+Larose, et al.           Expires 15 August 2020                 [Page 4]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -262,30 +262,30 @@ Internet-Draft            CAPPORT Architecture             February 2020
    At this time we consider only devices with web browsers, with web
    applications being the means of satisfying Captive Portal Conditions.
 
-   o  An example interactive User Equipment is a smart phone.
+   *  An example interactive User Equipment is a smart phone.
 
-   o  SHOULD support provisioning of the URI for the Captive Portal API
+   *  SHOULD support provisioning of the URI for the Captive Portal API
       (e.g., by DHCP)
 
-   o  SHOULD distinguish Captive Portal API access per network
+   *  SHOULD distinguish Captive Portal API access per network
       interface, in the manner of Provisioning Domain Architecture
       [RFC7556].
 
-   o  SHOULD have a mechanism for notifying the user of the Captive
+   *  SHOULD have a mechanism for notifying the user of the Captive
       Portal
 
 
 
 
-Larose, et al.           Expires August 15, 2020                [Page 5]
+Larose, et al.           Expires 15 August 2020                 [Page 5]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
 
-   o  SHOULD have a web browser so that the user may navigate the
+   *  SHOULD have a web browser so that the user may navigate the
       Captive Portal user interface.
 
-   o  MAY restrict application access to networks not granting full
+   *  MAY restrict application access to networks not granting full
       network access.  E.g., a device connected to a mobile network may
       be connecting to a WiFi network; the operating system MAY avoid
       updating the default route until network access restrictions have
@@ -333,7 +333,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020                [Page 6]
+Larose, et al.           Expires 15 August 2020                 [Page 6]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -382,25 +382,25 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
    The Captive Portal Enforcement component:
 
-   o  Allows traffic through for allowed User Equipment.
+   *  Allows traffic through for allowed User Equipment.
 
-   o  Blocks (discards) traffic for disallowed User Equipment.
-
-
+   *  Blocks (discards) traffic for disallowed User Equipment.
 
 
-Larose, et al.           Expires August 15, 2020                [Page 7]
+
+
+Larose, et al.           Expires 15 August 2020                 [Page 7]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
 
-   o  May signal User Equipment using the Captive Portal Signaling
+   *  May signal User Equipment using the Captive Portal Signaling
       protocol if traffic is blocked.
 
-   o  Permits disallowed User Equipment to access necessary APIs and web
+   *  Permits disallowed User Equipment to access necessary APIs and web
       pages to fulfill requirements of exiting captivity.
 
-   o  Updates allow/block rules per User Equipment in response to
+   *  Updates allow/block rules per User Equipment in response to
       operations from the Captive Portal back-end.
 
 2.5.  Captive Portal Signal
@@ -445,7 +445,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020                [Page 8]
+Larose, et al.           Expires 15 August 2020                 [Page 8]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -501,26 +501,26 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020                [Page 9]
+Larose, et al.           Expires 15 August 2020                 [Page 9]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
 
-   o  During provisioning (e.g., DHCP), the User Equipment acquires the
+   *  During provisioning (e.g., DHCP), the User Equipment acquires the
       URI for the Captive Portal API.
 
-   o  The User Equipment queries the API to learn of its state of
+   *  The User Equipment queries the API to learn of its state of
       captivity.  If captive, the User Equipment presents the portal
       user interface to the user.
 
-   o  The User Equipment attempts to communicate to the external network
+   *  The User Equipment attempts to communicate to the external network
       through the Captive Portal enforcement device.
 
-   o  The Captive Portal Enforcement device either allows the User
+   *  The Captive Portal Enforcement device either allows the User
       Equipment's packets to the external network, or if a signal has
       been implemented, responds with a Captive Portal Signal.
 
-   o  The Web Portal Server directs the Captive Portal Enforcement
+   *  The Web Portal Server directs the Captive Portal Enforcement
       device to either allow or deny external network access for the
       User Equipment.
 
@@ -557,7 +557,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020               [Page 10]
+Larose, et al.           Expires 15 August 2020                [Page 10]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -570,13 +570,13 @@ Internet-Draft            CAPPORT Architecture             February 2020
    change depending on the position of the components in the network as
    well as the information available to them.  An identifier SHOULD:
 
-   o  Uniquely Identify the User Equipment
+   *  Uniquely Identify the User Equipment
 
-   o  Be Hard to Spoof
+   *  Be Hard to Spoof
 
-   o  Be Visible to the API Server
+   *  Be Visible to the API Server
 
-   o  Be Visible to the Enforcement Device
+   *  Be Visible to the Enforcement Device
 
    An identifier might only apply to the current point of network
    attachment.  If the device moves to a different network location its
@@ -613,7 +613,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020               [Page 11]
+Larose, et al.           Expires 15 August 2020                [Page 11]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -669,7 +669,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020               [Page 12]
+Larose, et al.           Expires 15 August 2020                [Page 12]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -725,7 +725,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020               [Page 13]
+Larose, et al.           Expires 15 August 2020                [Page 13]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -781,7 +781,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020               [Page 14]
+Larose, et al.           Expires 15 August 2020                [Page 14]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -830,19 +830,19 @@ Internet-Draft            CAPPORT Architecture             February 2020
    A different Captive Portal API URI could be returned in the following
    cases:
 
-   o  If DHCP is used, a lease renewal/rebind may return a different
+   *  If DHCP is used, a lease renewal/rebind may return a different
       Captive Portal API URI.
 
 
 
 
 
-Larose, et al.           Expires August 15, 2020               [Page 15]
+Larose, et al.           Expires 15 August 2020                [Page 15]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
 
-   o  If RA is used, a new Captive Portal API URI may be specified in a
+   *  If RA is used, a new Captive Portal API URI may be specified in a
       new RA message received by end user equipment.
 
    Whenever a new Portal URI is received by end user equipment, it
@@ -893,7 +893,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires August 15, 2020               [Page 16]
+Larose, et al.           Expires 15 August 2020                [Page 16]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -914,14 +914,14 @@ Internet-Draft            CAPPORT Architecture             February 2020
    has been considered, and implementations may address it in the
    following ways:
 
-   o  The signal only informs the User Equipment to query the API.  It
+   *  The signal only informs the User Equipment to query the API.  It
       does not carry any information which may mislead or misdirect the
       User Equipment.
 
-   o  Even when responding to the signal, the User Equipment securely
+   *  Even when responding to the signal, the User Equipment securely
       authenticates with API Servers.
 
-   o  Accesses to the API Server are rate limited, limiting the impact
+   *  Accesses to the API Server are rate limited, limiting the impact
       of a repeated attack.
 
 7.5.  User Options
@@ -944,17 +944,16 @@ Internet-Draft            CAPPORT Architecture             February 2020
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
+   [RFC7556]  Anipko, D., Ed., "Multiple Provisioning Domain
 
 
 
 
-
-Larose, et al.           Expires August 15, 2020               [Page 17]
+Larose, et al.           Expires 15 August 2020                [Page 17]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
 
-   [RFC7556]  Anipko, D., Ed., "Multiple Provisioning Domain
               Architecture", RFC 7556, DOI 10.17487/RFC7556, June 2015,
               <https://www.rfc-editor.org/info/rfc7556>.
 
@@ -966,14 +965,17 @@ Internet-Draft            CAPPORT Architecture             February 2020
 8.2.  Informative References
 
    [I-D.nottingham-capport-problem]
-              Nottingham, M., "Captive Portals Problem Statement",
-              draft-nottingham-capport-problem-01 (work in progress),
-              April 2016.
+              Nottingham, M., "Captive Portals Problem Statement", Work
+              in Progress, Internet-Draft, draft-nottingham-capport-
+              problem-01, 4 April 2016, <http://www.ietf.org/internet-
+              drafts/draft-nottingham-capport-problem-01.txt>.
 
    [I-D.pfister-capport-pvd]
               Pfister, P. and T. Pauly, "Using Provisioning Domains for
-              Captive Portal Discovery", draft-pfister-capport-pvd-00
-              (work in progress), June 2018.
+              Captive Portal Discovery", Work in Progress, Internet-
+              Draft, draft-pfister-capport-pvd-00, 30 June 2018,
+              <http://www.ietf.org/internet-drafts/draft-pfister-
+              capport-pvd-00.txt>.
 
 Appendix A.  Existing captive portal detection implementations
 
@@ -1000,14 +1002,15 @@ Authors' Addresses
    Kyle Larose
    Agilicus
 
-   Email: kyle@agilicus.com
 
 
 
-
-Larose, et al.           Expires August 15, 2020               [Page 18]
+Larose, et al.           Expires 15 August 2020                [Page 18]
 
 Internet-Draft            CAPPORT Architecture             February 2020
+
+
+   Email: kyle@agilicus.com
 
 
    David Dolson
@@ -1058,7 +1061,4 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 19]
+Larose, et al.           Expires 15 August 2020                [Page 19]
