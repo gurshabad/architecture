@@ -72,37 +72,37 @@ Table of Contents
        2.2.1.  DHCP or Router Advertisements . . . . . . . . . . . .   6
        2.2.2.  Provisioning Domains  . . . . . . . . . . . . . . . .   6
      2.3.  Captive Portal API Server . . . . . . . . . . . . . . . .   7
-     2.4.  Captive Portal Enforcement  . . . . . . . . . . . . . . .   8
+     2.4.  Captive Portal Enforcement  . . . . . . . . . . . . . . .   7
      2.5.  Captive Portal Signal . . . . . . . . . . . . . . . . . .   8
      2.6.  Component Diagram . . . . . . . . . . . . . . . . . . . .   9
-   3.  User Equipment Identity . . . . . . . . . . . . . . . . . . .  11
-     3.1.  Identifiers . . . . . . . . . . . . . . . . . . . . . . .  11
+   3.  User Equipment Identity . . . . . . . . . . . . . . . . . . .  10
+     3.1.  Identifiers . . . . . . . . . . . . . . . . . . . . . . .  10
      3.2.  Recommended Properties  . . . . . . . . . . . . . . . . .  11
-       3.2.1.  Uniquely Identify User Equipment  . . . . . . . . . .  12
-       3.2.2.  Hard to Spoof . . . . . . . . . . . . . . . . . . . .  12
+       3.2.1.  Uniquely Identify User Equipment  . . . . . . . . . .  11
+       3.2.2.  Hard to Spoof . . . . . . . . . . . . . . . . . . . .  11
        3.2.3.  Visible to the API Server . . . . . . . . . . . . . .  12
        3.2.4.  Visible to the Enforcement Device . . . . . . . . . .  12
-     3.3.  Evaluating an Identifier  . . . . . . . . . . . . . . . .  13
-     3.4.  Examples of an Identifier . . . . . . . . . . . . . . . .  13
-       3.4.1.  Physical Interface  . . . . . . . . . . . . . . . . .  13
-       3.4.2.  IP Address  . . . . . . . . . . . . . . . . . . . . .  14
+     3.3.  Evaluating an Identifier  . . . . . . . . . . . . . . . .  12
+     3.4.  Examples of an Identifier . . . . . . . . . . . . . . . .  12
+       3.4.1.  Physical Interface  . . . . . . . . . . . . . . . . .  12
+       3.4.2.  IP Address  . . . . . . . . . . . . . . . . . . . . .  13
    4.  Solution Workflow . . . . . . . . . . . . . . . . . . . . . .  14
-     4.1.  Initial Connection  . . . . . . . . . . . . . . . . . . .  15
-     4.2.  Conditions About to Expire  . . . . . . . . . . . . . . .  15
-     4.3.  Handling of Changes in Portal URI . . . . . . . . . . . .  16
-   5.  Acknowledgments . . . . . . . . . . . . . . . . . . . . . . .  16
-   6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  16
+     4.1.  Initial Connection  . . . . . . . . . . . . . . . . . . .  14
+     4.2.  Conditions About to Expire  . . . . . . . . . . . . . . .  14
+     4.3.  Handling of Changes in Portal URI . . . . . . . . . . . .  15
+   5.  Acknowledgments . . . . . . . . . . . . . . . . . . . . . . .  15
+   6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  15
    7.  Security Considerations . . . . . . . . . . . . . . . . . . .  16
      7.1.  Trusting the Network  . . . . . . . . . . . . . . . . . .  16
-     7.2.  Authenticated APIs  . . . . . . . . . . . . . . . . . . .  17
-     7.3.  Secure APIs . . . . . . . . . . . . . . . . . . . . . . .  17
-     7.4.  Risks Associated with the Signaling Protocol  . . . . . .  17
+     7.2.  Authenticated APIs  . . . . . . . . . . . . . . . . . . .  16
+     7.3.  Secure APIs . . . . . . . . . . . . . . . . . . . . . . .  16
+     7.4.  Risks Associated with the Signaling Protocol  . . . . . .  16
      7.5.  User Options  . . . . . . . . . . . . . . . . . . . . . .  17
-   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  18
-     8.1.  Normative References  . . . . . . . . . . . . . . . . . .  18
-     8.2.  Informative References  . . . . . . . . . . . . . . . . .  18
+   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  17
+     8.1.  Normative References  . . . . . . . . . . . . . . . . . .  17
+     8.2.  Informative References  . . . . . . . . . . . . . . . . .  17
    Appendix A.  Existing captive portal detection implementations  .  18
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  19
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  18
 
 
 
@@ -180,10 +180,9 @@ Internet-Draft            CAPPORT Architecture             February 2020
       is required to escape captivity.  DHCP, DHCPv6, and Router-
       Advertisement options for this purpose are available in [RFC7710].
       Other protocols (such as RADIUS), Provisioning Domains
-      [I-D.ietf-intarea-provisioning-domains], or static configuration
-      may also be used.  A device MAY query this API at any time to
-      determine whether the network is holding the device in a captive
-      state.
+      [I-D.pfister-capport-pvd], or static configuration may also be
+      used.  A device MAY query this API at any time to determine
+      whether the network is holding the device in a captive state.
 
    o  End-user devices can be notified of captivity with Captive Portal
       Signals in response to traffic.  This notification should work
@@ -217,6 +216,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
    Captive Portal Conditions: site-specific requirements that a user or
    device must satisfy in order to gain access to the wider network.
+
 
 
 
@@ -320,11 +320,10 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 2.2.2.  Provisioning Domains
 
-   [I-D.ietf-intarea-provisioning-domains] proposes a mechanism for User
-   Equipment to be provided with PvD Bootstrap Information containing
-   the URI for a JSON file containing key-value pairs to be downloaded
-   over HTTPS.  This JSON file would fill the role of the Captive Portal
-   API described in Section 2.3.
+   Although still a work in progress, [I-D.pfister-capport-pvd] proposes
+   a mechanism for User Equipment to be provided with PvD Bootstrap
+   Information containing the URI for the JSON-based API described in
+   Section 2.3.
 
    The PvD security model provides secure binding between the
    information provided by the trusted Router Advertisement and the
@@ -333,25 +332,11 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
+
 Larose, et al.           Expires August 15, 2020                [Page 6]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
-
-   One key-value pair can be used to indicate the network has restricted
-   access, requiring captive portal navigation by a user.  E.g.,
-   key="captivePortal" and value=<URI of portal>.  The key-value pair
-   should provide a different result when access is not restricted.
-   E.g., key="captivePortal" and value="".
-
-   This JSON file is extensible, allowing new key-value pairs to
-   indicate such things as network access expiry time, URI for API
-   access by IOT devices, etc.
-
-   The PvD server MUST support multiple (repeated) queries from each
-   User Equipment, always returning the current captive portal
-   information.  The User Equipment is expected to make this query upon
-   receiving (and validating) a Captive Portal Signal (see Section 2.5).
 
 2.3.  Captive Portal API Server
 
@@ -386,14 +371,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
    implementation of the API MUST ensure both privacy and integrity of
    any information provided by or required by it.
 
-
-
-
-Larose, et al.           Expires August 15, 2020                [Page 7]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
-
    This document does not specify the details of the API.
 
 2.4.  Captive Portal Enforcement
@@ -408,6 +385,14 @@ Internet-Draft            CAPPORT Architecture             February 2020
    o  Allows traffic through for allowed User Equipment.
 
    o  Blocks (discards) traffic for disallowed User Equipment.
+
+
+
+
+Larose, et al.           Expires August 15, 2020                [Page 7]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
 
    o  May signal User Equipment using the Captive Portal Signaling
       protocol if traffic is blocked.
@@ -442,14 +427,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
    1.  The notification SHOULD NOT be easy to spoof.  If an attacker can
        send spoofed notifications to the User Equipment, they can cause
        the User Equipment to unnecessarily access the API.  Rather than
-
-
-
-Larose, et al.           Expires August 15, 2020                [Page 8]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
-
        relying solely on rate limits to prevent problems, a good
        protocol will strive to limit the feasibility of such attacks.
 
@@ -465,6 +442,14 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
    The Captive Portal Signaling Protocol does not provide any means of
    indicating that the network prevents access to some destinations.
+
+
+
+Larose, et al.           Expires August 15, 2020                [Page 8]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
+
    The intent is to rely on the Captive Portal API and the web portal to
    which it points to communicate local network policies.
 
@@ -476,35 +461,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
    indications are only sent to the User Equipment.
 
 2.6.  Component Diagram
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Larose, et al.           Expires August 15, 2020                [Page 9]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
 
    The following diagram shows the communication between each component.
 
@@ -541,6 +497,15 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
    In the diagram:
 
+
+
+
+
+Larose, et al.           Expires August 15, 2020                [Page 9]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
+
    o  During provisioning (e.g., DHCP), the User Equipment acquires the
       URI for the Captive Portal API.
 
@@ -554,13 +519,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
    o  The Captive Portal Enforcement device either allows the User
       Equipment's packets to the external network, or if a signal has
       been implemented, responds with a Captive Portal Signal.
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 10]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
 
    o  The Web Portal Server directs the Captive Portal Enforcement
       device to either allow or deny external network access for the
@@ -594,6 +552,16 @@ Internet-Draft            CAPPORT Architecture             February 2020
    correlated with such information through knowledge available to the
    different components.
 
+
+
+
+
+
+Larose, et al.           Expires August 15, 2020               [Page 10]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
+
 3.2.  Recommended Properties
 
    The set of possible identifiers is quite large.  However, in order to
@@ -609,14 +577,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
    o  Be Visible to the API Server
 
    o  Be Visible to the Enforcement Device
-
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 11]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
 
    An identifier might only apply to the current point of network
    attachment.  If the device moves to a different network location its
@@ -648,6 +608,16 @@ Internet-Draft            CAPPORT Architecture             February 2020
    billing systems, or where the identity of the User Equipment could
    imply liability.
 
+
+
+
+
+
+Larose, et al.           Expires August 15, 2020               [Page 11]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
+
 3.2.3.  Visible to the API Server
 
    Since the API Server will need to perform operations which rely on
@@ -662,17 +632,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
    this decision depends on which User Equipment sent the packet, the
    Enforcement Device requires that it be able to map the packet to its
    concept of the User Equipment.
-
-
-
-
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 12]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
 
 3.3.  Evaluating an Identifier
 
@@ -706,6 +665,15 @@ Internet-Draft            CAPPORT Architecture             February 2020
    User Equipment is attached to the network on the same physical
    interface, then this property is not appropriate.
 
+
+
+
+
+Larose, et al.           Expires August 15, 2020               [Page 12]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
+
    Another consideration related to uniqueness of the User Equipment is
    that if the attached User Equipment changes, both the API Server and
    the Enforcement Device must invalidate their state related to the
@@ -720,15 +688,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
    The API Server faces a similar problem, implying that it should co-
    exist with the Enforcement Device, or that the enforcement device
    should extend requests to it with the identifying information.
-
-
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 13]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
 
 3.4.2.  IP Address
 
@@ -763,6 +722,14 @@ Internet-Draft            CAPPORT Architecture             February 2020
    example, if the user equipment tries to access the network with
    multiple IP addresses, should the enforcement device and API Server
    treat each IP address as a unique User Equipment, or should it tie
+
+
+
+Larose, et al.           Expires August 15, 2020               [Page 13]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
+
    the multiple addresses together into one view of the subscriber?  An
    implementation MAY do either.  Attention should be paid to IPv6 and
    the fact that it is expected for a device to have multiple IPv6
@@ -773,18 +740,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
    This section aims to improve understanding by describing a possible
    workflow of solutions adhering to the architecture.
-
-
-
-
-
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 14]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
 
 4.1.  Initial Connection
 
@@ -824,6 +779,13 @@ Internet-Draft            CAPPORT Architecture             February 2020
    1.  Precondition: the API has provided the User Equipment with a
        duration over which its access is valid
 
+
+
+Larose, et al.           Expires August 15, 2020               [Page 14]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
+
    2.  The User Equipment is communicating with the outside network
 
    3.  The User Equipment's UI indicates that the length of time left
@@ -834,13 +796,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
    5.  If expiry is still imminent, the User Equipment prompts the user
        to access the web-portal URI again
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 15]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
 
    6.  The User extends their access through the web-portal
 
@@ -876,6 +831,17 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
    This memo includes no request to IANA.
 
+
+
+
+
+
+
+Larose, et al.           Expires August 15, 2020               [Page 15]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
+
 7.  Security Considerations
 
 7.1.  Trusting the Network
@@ -887,16 +853,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
    by who claims to be operating it.  The Provisioning Domain
    Architecture [RFC7556] provides some discussion on authenticating an
    operator.
-
-
-
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 16]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
 
    Given that a user chooses to visit a Captive Portal URI, the URI
    location SHOULD be securely provided to the user's device.  E.g., the
@@ -933,6 +889,15 @@ Internet-Draft            CAPPORT Architecture             February 2020
       does not carry any information which may mislead or misdirect the
       User Equipment.
 
+
+
+
+
+Larose, et al.           Expires August 15, 2020               [Page 16]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
+
    o  Even when responding to the signal, the User Equipment securely
       authenticates with API Servers.
 
@@ -946,14 +911,6 @@ Internet-Draft            CAPPORT Architecture             February 2020
    something about this.  Devices MAY permit users to disable automatic
    reaction to captive-portal indications for privacy reasons.  However,
    there is the trade-off that the user doesn't get notified when
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 17]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
-
    network access is restricted.  Hence, end-user devices MAY allow
    users to manually control captive portal interactions, possibly on
    the granularity of Provisioning Domains.
@@ -978,16 +935,24 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 8.2.  Informative References
 
-   [I-D.ietf-intarea-provisioning-domains]
-              Pfister, P., Vyncke, E., Pauly, T., Schinazi, D., and W.
-              Shao, "Discovering Provisioning Domain Names and Data",
-              draft-ietf-intarea-provisioning-domains-11 (work in
-              progress), January 2020.
-
    [I-D.nottingham-capport-problem]
               Nottingham, M., "Captive Portals Problem Statement",
               draft-nottingham-capport-problem-01 (work in progress),
               April 2016.
+
+   [I-D.pfister-capport-pvd]
+              Pfister, P. and T. Pauly, "Using Provisioning Domains for
+              Captive Portal Discovery", draft-pfister-capport-pvd-00
+              (work in progress), June 2018.
+
+
+
+
+
+Larose, et al.           Expires August 15, 2020               [Page 17]
+
+Internet-Draft            CAPPORT Architecture             February 2020
+
 
 Appendix A.  Existing captive portal detection implementations
 
@@ -1002,14 +967,6 @@ Appendix A.  Existing captive portal detection implementations
    test that can be performed is a DNS lookup to a known address with an
    expected answer.  Such tests may be less reliable as the captive
    portal may only be intercepting TCP traffic and deliberately
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 18]
-
-Internet-Draft            CAPPORT Architecture             February 2020
-
-
    excluding the interception of DNS queries.  DNS queries not using UDP
    may potentially fail this test if operating over TCP or DNS over
    HTTP.  Malicious or misconfigured networks with a captive portal
@@ -1048,17 +1005,4 @@ Authors' Addresses
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Larose, et al.           Expires August 15, 2020               [Page 19]
+Larose, et al.           Expires August 15, 2020               [Page 18]

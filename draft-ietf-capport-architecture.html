@@ -585,7 +585,7 @@
 <p id="rfc.section.1.p.6">The architecture uses the following mechanisms: </p>
 
 <ul>
-<li>Network provisioning protocols provide end-user devices with a URI for the API that end-user devices query for information about what is required to escape captivity. DHCP, DHCPv6, and Router-Advertisement options for this purpose are available in <a href="#RFC7710" class="xref">[RFC7710]</a>. Other protocols (such as RADIUS), Provisioning Domains <a href="#I-D.ietf-intarea-provisioning-domains" class="xref">[I-D.ietf-intarea-provisioning-domains]</a>, or static configuration may also be used.  A device MAY query this API at any time to determine whether the network is holding the device in a captive state.  </li>
+<li>Network provisioning protocols provide end-user devices with a URI for the API that end-user devices query for information about what is required to escape captivity. DHCP, DHCPv6, and Router-Advertisement options for this purpose are available in <a href="#RFC7710" class="xref">[RFC7710]</a>. Other protocols (such as RADIUS), Provisioning Domains <a href="#I-D.pfister-capport-pvd" class="xref">[I-D.pfister-capport-pvd]</a>, or static configuration may also be used.  A device MAY query this API at any time to determine whether the network is holding the device in a captive state.  </li>
 <li>End-user devices can be notified of captivity with Captive Portal Signals in response to traffic.  This notification should work with any Internet protocol, not just clear-text HTTP. This notification does not carry the portal URI; rather it provides a notification to the User Equipment that it is in a captive state. This document will specify requirements for a signaling protocol which could generate Captive Portal Signals.  </li>
 <li>Receipt of a Captive Portal Signal informs an end-user device that it could be captive.  In response, the device MAY query the provisioned API to obtain information about the network state.  The device MAY take immediate action to satisfy the portal (according to its configuration/policy).  </li>
 </ul>
@@ -636,11 +636,8 @@
 <h1 id="rfc.section.2.2.2">
 <a href="#rfc.section.2.2.2">2.2.2.</a> <a href="#section_pvd" id="section_pvd">Provisioning Domains</a>
 </h1>
-<p><a href="#I-D.ietf-intarea-provisioning-domains" class="xref">[I-D.ietf-intarea-provisioning-domains]</a> proposes a mechanism for User Equipment to be provided with PvD Bootstrap Information containing the URI for a JSON file containing key-value pairs to be downloaded over HTTPS.  This JSON file would fill the role of the Captive Portal API described in <a href="#section_api" class="xref">Section 2.3</a>.  </p>
+<p id="rfc.section.2.2.2.p.1">Although still a work in progress, <a href="#I-D.pfister-capport-pvd" class="xref">[I-D.pfister-capport-pvd]</a> proposes a mechanism for User Equipment to be provided with PvD Bootstrap Information containing the URI for the JSON-based API described in <a href="#section_api" class="xref">Section 2.3</a>.  </p>
 <p id="rfc.section.2.2.2.p.2">The PvD security model provides secure binding between the information provided by the trusted Router Advertisement and the HTTPS server.  </p>
-<p id="rfc.section.2.2.2.p.3">One key-value pair can be used to indicate the network has restricted access, requiring captive portal navigation by a user.  E.g., key="captivePortal" and value=&lt;URI of portal&gt;.  The key-value pair should provide a different result when access is not restricted. E.g., key="captivePortal" and value="".  </p>
-<p id="rfc.section.2.2.2.p.4">This JSON file is extensible, allowing new key-value pairs to indicate such things as network access expiry time, URI for API access by IOT devices, etc.  </p>
-<p id="rfc.section.2.2.2.p.5">The PvD server MUST support multiple (repeated) queries from each User Equipment, always returning the current captive portal information.  The User Equipment is expected to make this query upon receiving (and validating) a Captive Portal Signal (see <a href="#section_signal" class="xref">Section 2.5</a>).  </p>
 <h1 id="rfc.section.2.3">
 <a href="#rfc.section.2.3">2.3.</a> <a href="#section_api" id="section_api">Captive Portal API Server</a>
 </h1>
@@ -899,14 +896,14 @@ o . . . . . . . . . . . . . . . . . . .| |. . . . . . . . . . . o
 <a href="#rfc.references.2">8.2.</a> Informative References</h1>
 <table><tbody>
 <tr>
-<td class="reference"><b id="I-D.ietf-intarea-provisioning-domains">[I-D.ietf-intarea-provisioning-domains]</b></td>
-<td class="top">
-<a>Pfister, P.</a>, <a>Vyncke, E.</a>, <a>Pauly, T.</a>, <a>Schinazi, D.</a> and <a>W. Shao</a>, "<a href="https://tools.ietf.org/html/draft-ietf-intarea-provisioning-domains-11">Discovering Provisioning Domain Names and Data</a>", Internet-Draft draft-ietf-intarea-provisioning-domains-11, January 2020.</td>
-</tr>
-<tr>
 <td class="reference"><b id="I-D.nottingham-capport-problem">[I-D.nottingham-capport-problem]</b></td>
 <td class="top">
 <a>Nottingham, M.</a>, "<a href="https://tools.ietf.org/html/draft-nottingham-capport-problem-01">Captive Portals Problem Statement</a>", Internet-Draft draft-nottingham-capport-problem-01, April 2016.</td>
+</tr>
+<tr>
+<td class="reference"><b id="I-D.pfister-capport-pvd">[I-D.pfister-capport-pvd]</b></td>
+<td class="top">
+<a>Pfister, P.</a> and <a>T. Pauly</a>, "<a href="https://tools.ietf.org/html/draft-pfister-capport-pvd-00">Using Provisioning Domains for Captive Portal Discovery</a>", Internet-Draft draft-pfister-capport-pvd-00, June 2018.</td>
 </tr>
 </tbody></table>
 <h1 id="rfc.appendix.A">
