@@ -397,6 +397,7 @@
 <link href="#rfc.section.3.4" rel="Chapter" title="3.4 Examples of an Identifier">
 <link href="#rfc.section.3.4.1" rel="Chapter" title="3.4.1 Physical Interface">
 <link href="#rfc.section.3.4.2" rel="Chapter" title="3.4.2 IP Address">
+<link href="#rfc.section.3.4.3" rel="Chapter" title="3.4.3 Context-free URL">
 <link href="#rfc.section.4" rel="Chapter" title="4 Solution Workflow">
 <link href="#rfc.section.4.1" rel="Chapter" title="4.1 Initial Connection">
 <link href="#rfc.section.4.2" rel="Chapter" title="4.2 Conditions About to Expire">
@@ -525,6 +526,8 @@
 <ul><li>3.4.1.   <a href="#rfc.section.3.4.1">Physical Interface</a>
 </li>
 <li>3.4.2.   <a href="#rfc.section.3.4.2">IP Address</a>
+</li>
+<li>3.4.3.   <a href="#rfc.section.3.4.3">Context-free URL</a>
 </li>
 </ul></ul><li>4.   <a href="#rfc.section.4">Solution Workflow</a>
 </li>
@@ -791,6 +794,12 @@ o . . . . . . . . . . . . . . . . . . .| |. . . . . . . . . . . o
 <p id="rfc.section.3.4.2.p.2">However, it may be possible to spoof the IP address, particularly for malicious reasons where proper functioning of the network is not necessary for the malicious actor. Consequently, any solution using the IP address should proactively try to prevent spoofing of the IP address. Similarly, if the mapping of IP address to User Equipment is changed, the components of the architecture must remove or update their mapping to prevent spoofing.  Demonstrations of return routeability, such as that required for TCP connection establishment, might be sufficient defense against spoofing, though this might not be sufficient in networks that use broadcast media (such as some wireless networks).  </p>
 <p id="rfc.section.3.4.2.p.3">Since the IP address may traverse multiple segments of the network, more flexibility is afforded to the Enforcement Device and the API Server: they simply must exist on a segment of the network where the IP address is still unique. However, consider that a NAT may be deployed between the User Equipment and the Enforcement Device. In such cases, it is possible for the components to still uniquely identify the device if they are aware of the port mapping.  </p>
 <p id="rfc.section.3.4.2.p.4">In some situations, the User Equipment may have multiple IP addresses, while still satisfying all of the recommended properties. This raises some challenges to the components of the network. For example, if the user equipment tries to access the network with multiple IP addresses, should the enforcement device and API Server treat each IP address as a unique User Equipment, or should it tie the multiple addresses together into one view of the subscriber? An implementation MAY do either. Attention should be paid to IPv6 and the fact that it is expected for a device to have multiple IPv6 addresses on a single link. In such cases, identification could be performed by subnet, such as the /64 to which the IP belongs.  </p>
+<h1 id="rfc.section.3.4.3">
+<a href="#rfc.section.3.4.3">3.4.3.</a> <a href="#context_free_url" id="context_free_url">Context-free URL</a>
+</h1>
+<p id="rfc.section.3.4.3.p.1">The URLs provided in the API SHOULD contain all the information necessary to render the resources requested: the resources should not depend on ambient information, such as remote address on the connection. This is to ensure that the content served from these URLs is correct and meaningful to the User Equipment, even when accessed from a network other than the one that contains the captive portal.  One consequence of this is that URLs provided in the API are expected to be resolved using public DNS.  </p>
+<p id="rfc.section.3.4.3.p.2">Though a URL might still correctly resolve when the UE makes the request from a different network, it is possible that some functions could be limited to when the UE makes requests using the captive network. For example, payment options could be absent or a warning could be displayed to indicate the payment is not for the current connection.  </p>
+<p id="rfc.section.3.4.3.p.3">URLs could include some means of identifying the User Equipment in the URLs.  However, including unauthenticated User Equipment identifiers in the URL may expose the service to spoofing or replay attacks.  </p>
 <h1 id="rfc.section.4">
 <a href="#rfc.section.4">4.</a> <a href="#section_workflow" id="section_workflow">Solution Workflow</a>
 </h1>
