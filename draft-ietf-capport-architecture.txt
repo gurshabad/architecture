@@ -5,9 +5,9 @@
 Internet Engineering Task Force                                K. Larose
 Internet-Draft                                                  Agilicus
 Intended status: Informational                                 D. Dolson
-Expires: July 9, 2020
+Expires: August 15, 2020
                                                                   H. Liu
-                                                         January 6, 2020
+                                                       February 12, 2020
 
 
                           CAPPORT Architecture
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on July 9, 2020.
+   This Internet-Draft will expire on August 15, 2020.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Larose, et al.            Expires July 9, 2020                  [Page 1]
+Larose, et al.           Expires August 15, 2020                [Page 1]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    the Trust Legal Provisions and are provided without warranty as
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Larose, et al.            Expires July 9, 2020                  [Page 2]
+Larose, et al.           Expires August 15, 2020                [Page 2]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
 1.  Introduction
@@ -165,9 +165,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                  [Page 3]
+Larose, et al.           Expires August 15, 2020                [Page 3]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    captivity.  However, this document does not yet describe a mechanism
@@ -221,9 +221,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                  [Page 4]
+Larose, et al.           Expires August 15, 2020                [Page 4]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    Captive Portal Enforcement: The network equipment which enforces the
@@ -277,9 +277,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                  [Page 5]
+Larose, et al.           Expires August 15, 2020                [Page 5]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    o  SHOULD have a web browser so that the user may navigate the
@@ -333,9 +333,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                  [Page 6]
+Larose, et al.           Expires August 15, 2020                [Page 6]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    One key-value pair can be used to indicate the network has restricted
@@ -389,9 +389,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                  [Page 7]
+Larose, et al.           Expires August 15, 2020                [Page 7]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    This document does not specify the details of the API.
@@ -445,9 +445,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                  [Page 8]
+Larose, et al.           Expires August 15, 2020                [Page 8]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
        relying solely on rate limits to prevent problems, a good
@@ -501,9 +501,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                  [Page 9]
+Larose, et al.           Expires August 15, 2020                [Page 9]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    The following diagram shows the communication between each component.
@@ -557,9 +557,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 10]
+Larose, et al.           Expires August 15, 2020               [Page 10]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    o  The Web Portal Server directs the Captive Portal Enforcement
@@ -613,9 +613,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 11]
+Larose, et al.           Expires August 15, 2020               [Page 11]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    An identifier might only apply to the current point of network
@@ -669,9 +669,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 12]
+Larose, et al.           Expires August 15, 2020               [Page 12]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
 3.3.  Evaluating an Identifier
@@ -725,9 +725,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 13]
+Larose, et al.           Expires August 15, 2020               [Page 13]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
 3.4.2.  IP Address
@@ -781,9 +781,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 14]
+Larose, et al.           Expires August 15, 2020               [Page 14]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
 4.1.  Initial Connection
@@ -837,9 +837,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 15]
+Larose, et al.           Expires August 15, 2020               [Page 15]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    6.  The User extends their access through the web-portal
@@ -893,9 +893,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 16]
+Larose, et al.           Expires August 15, 2020               [Page 16]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    Given that a user chooses to visit a Captive Portal URI, the URI
@@ -949,9 +949,9 @@ Internet-Draft            CAPPORT Architecture              January 2020
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 17]
+Larose, et al.           Expires August 15, 2020               [Page 17]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    network access is restricted.  Hence, end-user devices MAY allow
@@ -981,8 +981,8 @@ Internet-Draft            CAPPORT Architecture              January 2020
    [I-D.ietf-intarea-provisioning-domains]
               Pfister, P., Vyncke, E., Pauly, T., Schinazi, D., and W.
               Shao, "Discovering Provisioning Domain Names and Data",
-              draft-ietf-intarea-provisioning-domains-09 (work in
-              progress), December 2019.
+              draft-ietf-intarea-provisioning-domains-11 (work in
+              progress), January 2020.
 
    [I-D.nottingham-capport-problem]
               Nottingham, M., "Captive Portals Problem Statement",
@@ -1005,9 +1005,9 @@ Appendix A.  Existing captive portal detection implementations
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 18]
+Larose, et al.           Expires August 15, 2020               [Page 18]
 
-Internet-Draft            CAPPORT Architecture              January 2020
+Internet-Draft            CAPPORT Architecture             February 2020
 
 
    excluding the interception of DNS queries.  DNS queries not using UDP
@@ -1061,4 +1061,4 @@ Authors' Addresses
 
 
 
-Larose, et al.            Expires July 9, 2020                 [Page 19]
+Larose, et al.           Expires August 15, 2020               [Page 19]
