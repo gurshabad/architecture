@@ -1,6 +1,318 @@
 [
 
   {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/45",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/45/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/45/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/45/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/45",
+    "id": 563729499,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc0MDg4NjQ2",
+    "number": 45,
+    "title": "Use 8174 boilerplate",
+    "user": {
+      "login": "martinthomson",
+      "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/martinthomson",
+      "html_url": "https://github.com/martinthomson",
+      "followers_url": "https://api.github.com/users/martinthomson/followers",
+      "following_url": "https://api.github.com/users/martinthomson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/martinthomson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/martinthomson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/martinthomson/subscriptions",
+      "organizations_url": "https://api.github.com/users/martinthomson/orgs",
+      "repos_url": "https://api.github.com/users/martinthomson/repos",
+      "events_url": "https://api.github.com/users/martinthomson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/martinthomson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-12T03:39:19Z",
+    "updated_at": "2020-02-12T03:40:32Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/45",
+      "html_url": "https://github.com/capport-wg/architecture/pull/45",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/45.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/45.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/44",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/44/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/44/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/44/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/44",
+    "id": 563722403,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc0MDgyMzcy",
+    "number": 44,
+    "title": "Less context",
+    "user": {
+      "login": "martinthomson",
+      "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/martinthomson",
+      "html_url": "https://github.com/martinthomson",
+      "followers_url": "https://api.github.com/users/martinthomson/followers",
+      "following_url": "https://api.github.com/users/martinthomson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/martinthomson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/martinthomson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/martinthomson/subscriptions",
+      "organizations_url": "https://api.github.com/users/martinthomson/orgs",
+      "repos_url": "https://api.github.com/users/martinthomson/repos",
+      "events_url": "https://api.github.com/users/martinthomson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/martinthomson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-02-12T03:23:48Z",
+    "updated_at": "2020-02-13T00:00:22Z",
+    "closed_at": "2020-02-13T00:00:22Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/44",
+      "html_url": "https://github.com/capport-wg/architecture/pull/44",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/44.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/44.patch"
+    },
+    "body": "This removes some text around discovering URLs with 7710[bis] and PvD.  That extra context can be handled by those documents.\r\n\r\nThis builds on #43."
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/43",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/43/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/43/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/43/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/43",
+    "id": 563719774,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc0MDc5OTc5",
+    "number": 43,
+    "title": "Cite 7710bis",
+    "user": {
+      "login": "martinthomson",
+      "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/martinthomson",
+      "html_url": "https://github.com/martinthomson",
+      "followers_url": "https://api.github.com/users/martinthomson/followers",
+      "following_url": "https://api.github.com/users/martinthomson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/martinthomson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/martinthomson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/martinthomson/subscriptions",
+      "organizations_url": "https://api.github.com/users/martinthomson/orgs",
+      "repos_url": "https://api.github.com/users/martinthomson/repos",
+      "events_url": "https://api.github.com/users/martinthomson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/martinthomson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-02-12T03:19:33Z",
+    "updated_at": "2020-02-13T00:00:24Z",
+    "closed_at": "2020-02-13T00:00:24Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/43",
+      "html_url": "https://github.com/capport-wg/architecture/pull/43",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/43.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/43.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/42",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/42/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/42/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/42/events",
+    "html_url": "https://github.com/capport-wg/architecture/pull/42",
+    "id": 563712460,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc0MDczMzky",
+    "number": 42,
+    "title": "Convert to v3 XML",
+    "user": {
+      "login": "martinthomson",
+      "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/martinthomson",
+      "html_url": "https://github.com/martinthomson",
+      "followers_url": "https://api.github.com/users/martinthomson/followers",
+      "following_url": "https://api.github.com/users/martinthomson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/martinthomson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/martinthomson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/martinthomson/subscriptions",
+      "organizations_url": "https://api.github.com/users/martinthomson/orgs",
+      "repos_url": "https://api.github.com/users/martinthomson/repos",
+      "events_url": "https://api.github.com/users/martinthomson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/martinthomson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-12T03:05:52Z",
+    "updated_at": "2020-02-12T03:13:39Z",
+    "closed_at": "2020-02-12T03:13:38Z",
+    "author_association": "CONTRIBUTOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/capport-wg/architecture/pulls/42",
+      "html_url": "https://github.com/capport-wg/architecture/pull/42",
+      "diff_url": "https://github.com/capport-wg/architecture/pull/42.diff",
+      "patch_url": "https://github.com/capport-wg/architecture/pull/42.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/41",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/41/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/41/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/41/events",
+    "html_url": "https://github.com/capport-wg/architecture/issues/41",
+    "id": 563699464,
+    "node_id": "MDU6SXNzdWU1NjM2OTk0NjQ=",
+    "number": 41,
+    "title": "Doc has lots of lowercase \"must\" and \"should\"",
+    "user": {
+      "login": "martinthomson",
+      "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/martinthomson",
+      "html_url": "https://github.com/martinthomson",
+      "followers_url": "https://api.github.com/users/martinthomson/followers",
+      "following_url": "https://api.github.com/users/martinthomson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/martinthomson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/martinthomson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/martinthomson/subscriptions",
+      "organizations_url": "https://api.github.com/users/martinthomson/orgs",
+      "repos_url": "https://api.github.com/users/martinthomson/repos",
+      "events_url": "https://api.github.com/users/martinthomson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/martinthomson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-12T02:37:01Z",
+    "updated_at": "2020-02-12T02:37:01Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "body": "A scrub for these to determine which are really requirements is a good idea.\r\n\r\nAlso, update SS1.1 to use RFC 8174 boilerplate."
+  },
+  {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/40",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/40/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/40/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/40/events",
+    "html_url": "https://github.com/capport-wg/architecture/issues/40",
+    "id": 563697685,
+    "node_id": "MDU6SXNzdWU1NjM2OTc2ODU=",
+    "number": 40,
+    "title": "Cite 7710bis",
+    "user": {
+      "login": "martinthomson",
+      "id": 67641,
+      "node_id": "MDQ6VXNlcjY3NjQx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/67641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/martinthomson",
+      "html_url": "https://github.com/martinthomson",
+      "followers_url": "https://api.github.com/users/martinthomson/followers",
+      "following_url": "https://api.github.com/users/martinthomson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/martinthomson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/martinthomson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/martinthomson/subscriptions",
+      "organizations_url": "https://api.github.com/users/martinthomson/orgs",
+      "repos_url": "https://api.github.com/users/martinthomson/repos",
+      "events_url": "https://api.github.com/users/martinthomson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/martinthomson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-12T02:32:20Z",
+    "updated_at": "2020-02-13T00:00:24Z",
+    "closed_at": "2020-02-13T00:00:24Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "And remove some of the stuff that is speculative from SS2.2.1."
+  },
+  {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/39",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
     "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/39/labels{/name}",
@@ -34,17 +346,17 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2020-01-25T07:29:54Z",
-    "updated_at": "2020-02-11T06:48:49Z",
-    "closed_at": null,
+    "updated_at": "2020-02-12T03:01:56Z",
+    "closed_at": "2020-02-12T03:01:30Z",
     "author_association": "CONTRIBUTOR",
     "pull_request": {
       "url": "https://api.github.com/repos/capport-wg/architecture/pulls/39",
@@ -656,7 +968,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -665,8 +977,8 @@
     "milestone": null,
     "comments": 2,
     "created_at": "2019-11-20T01:25:21Z",
-    "updated_at": "2020-01-01T23:34:16Z",
-    "closed_at": null,
+    "updated_at": "2020-02-12T03:01:30Z",
+    "closed_at": "2020-02-12T03:01:30Z",
     "author_association": "CONTRIBUTOR",
     "body": "Based on discussion in Singapore, the group decided to recommend (not require) that URLs use names that can be resolved from the public DNS (no split horizon, etc...).  The content served from those URLs should also not be dependent on the network path, but instead the URL would include all information necessary to produce the resource."
   },
@@ -1000,7 +1312,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -1009,8 +1321,8 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2018-12-18T03:09:15Z",
-    "updated_at": "2018-12-18T03:09:15Z",
-    "closed_at": null,
+    "updated_at": "2020-02-12T02:43:39Z",
+    "closed_at": "2020-02-12T02:43:39Z",
     "author_association": "CONTRIBUTOR",
     "pull_request": {
       "url": "https://api.github.com/repos/capport-wg/architecture/pulls/22",
@@ -1108,7 +1420,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -1117,8 +1429,8 @@
     "milestone": null,
     "comments": 4,
     "created_at": "2018-12-16T15:39:08Z",
-    "updated_at": "2020-02-12T02:15:06Z",
-    "closed_at": null,
+    "updated_at": "2020-02-12T02:44:25Z",
+    "closed_at": "2020-02-12T02:44:25Z",
     "author_association": "CONTRIBUTOR",
     "pull_request": {
       "url": "https://api.github.com/repos/capport-wg/architecture/pulls/20",
@@ -1337,7 +1649,10 @@
       "patch_url": "https://github.com/capport-wg/architecture/pull/16.patch"
     },
     "body": "We decided to reduce the scope of the signalling protocol during ietf\r\n102 in Montreal (Issue #14).This attempts to do so.\r\n\r\n- Reduced signalling interactions from SHOULDs to a MAYs\r\n- Removed references to trusting/validating/authenticating/etc the Signal\r\n- reduced API extensibility text so that it no longer includes various unnecessary things, including \r\n  signal validation tokens\r\n- Removed section on the \"upgrade\" path of sending signal in conjunction with redirecting\r\n- changed a bit of language around to make it clear that the signal is truly optional\r\n- Fixed a few nits\r\n- Changed the \"Conditions About to Expire\" example to discuss the UE querying the API, rather\r\n  than relying on a pre-emptive signals."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/15",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
@@ -1631,10 +1946,7 @@
       "patch_url": "https://github.com/capport-wg/architecture/pull/10.patch"
     },
     "body": "This PR attempts to deal with issue #8 by replacing references to ICMP with a generic signaling protocols, then specifying requirements for it."
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/9",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
