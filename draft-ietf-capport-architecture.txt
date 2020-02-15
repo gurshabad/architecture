@@ -5,13 +5,13 @@
 Internet Engineering Task Force                                K. Larose
 Internet-Draft                                                  Agilicus
 Intended status: Informational                                 D. Dolson
-Expires: 16 August 2020                                                 
+Expires: 18 August 2020                                                 
                                                                   H. Liu
-                                                        13 February 2020
+                                                        15 February 2020
 
 
                           CAPPORT Architecture
-                   draft-ietf-capport-architecture-05
+                   draft-ietf-capport-architecture-06
 
 Abstract
 
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 16 August 2020.
+   This Internet-Draft will expire on 18 August 2020.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Larose, et al.           Expires 16 August 2020                 [Page 1]
+Larose, et al.           Expires 18 August 2020                 [Page 1]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Larose, et al.           Expires 16 August 2020                 [Page 2]
+Larose, et al.           Expires 18 August 2020                 [Page 2]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -165,7 +165,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                 [Page 3]
+Larose, et al.           Expires 18 August 2020                 [Page 3]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -221,7 +221,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                 [Page 4]
+Larose, et al.           Expires 18 August 2020                 [Page 4]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -277,7 +277,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                 [Page 5]
+Larose, et al.           Expires 18 August 2020                 [Page 5]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -333,7 +333,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                 [Page 6]
+Larose, et al.           Expires 18 August 2020                 [Page 6]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -389,7 +389,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                 [Page 7]
+Larose, et al.           Expires 18 August 2020                 [Page 7]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -445,7 +445,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                 [Page 8]
+Larose, et al.           Expires 18 August 2020                 [Page 8]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -501,7 +501,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                 [Page 9]
+Larose, et al.           Expires 18 August 2020                 [Page 9]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -557,7 +557,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 10]
+Larose, et al.           Expires 18 August 2020                [Page 10]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -613,7 +613,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 11]
+Larose, et al.           Expires 18 August 2020                [Page 11]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -669,7 +669,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 12]
+Larose, et al.           Expires 18 August 2020                [Page 12]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -725,7 +725,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 13]
+Larose, et al.           Expires 18 August 2020                [Page 13]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -781,7 +781,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 14]
+Larose, et al.           Expires 18 August 2020                [Page 14]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -837,7 +837,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 15]
+Larose, et al.           Expires 18 August 2020                [Page 15]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -893,7 +893,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 16]
+Larose, et al.           Expires 18 August 2020                [Page 16]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -949,7 +949,7 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 17]
+Larose, et al.           Expires 18 August 2020                [Page 17]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -1005,7 +1005,7 @@ Authors' Addresses
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 18]
+Larose, et al.           Expires 18 August 2020                [Page 18]
 
 Internet-Draft            CAPPORT Architecture             February 2020
 
@@ -1061,4 +1061,4 @@ Internet-Draft            CAPPORT Architecture             February 2020
 
 
 
-Larose, et al.           Expires 16 August 2020                [Page 19]
+Larose, et al.           Expires 18 August 2020                [Page 19]
