@@ -1,6 +1,54 @@
 [
 
   {
+    "url": "https://api.github.com/repos/capport-wg/architecture/issues/48",
+    "repository_url": "https://api.github.com/repos/capport-wg/architecture",
+    "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/48/labels{/name}",
+    "comments_url": "https://api.github.com/repos/capport-wg/architecture/issues/48/comments",
+    "events_url": "https://api.github.com/repos/capport-wg/architecture/issues/48/events",
+    "html_url": "https://github.com/capport-wg/architecture/issues/48",
+    "id": 577387222,
+    "node_id": "MDU6SXNzdWU1NzczODcyMjI=",
+    "number": 48,
+    "title": "I-D.nottingham-capport-problem is still referenced",
+    "user": {
+      "login": "dcdolson",
+      "id": 6045854,
+      "node_id": "MDQ6VXNlcjYwNDU4NTQ=",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6045854?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dcdolson",
+      "html_url": "https://github.com/dcdolson",
+      "followers_url": "https://api.github.com/users/dcdolson/followers",
+      "following_url": "https://api.github.com/users/dcdolson/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dcdolson/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dcdolson/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dcdolson/subscriptions",
+      "organizations_url": "https://api.github.com/users/dcdolson/orgs",
+      "repos_url": "https://api.github.com/users/dcdolson/repos",
+      "events_url": "https://api.github.com/users/dcdolson/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dcdolson/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-07T19:19:01Z",
+    "updated_at": "2020-03-07T19:19:01Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "body": "This paragraph still exists in the document:\r\n   Problems with captive portal implementations have been described in\r\n   [I-D.nottingham-capport-problem].  [If that document cannot be\r\n   published, consider putting its best parts into an appendix of this\r\n   document.]\r\nMaybe pull in sections 3 & 4 from https://tools.ietf.org/html/draft-nottingham-capport-problem-01 ?\r\n"
+  },
+  {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/47",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
     "labels_url": "https://api.github.com/repos/capport-wg/architecture/issues/47/labels{/name}",
@@ -1595,7 +1643,10 @@
       "patch_url": "https://github.com/capport-wg/architecture/pull/19.patch"
     },
     "body": "Point out that future Captive Portal Signalling Protocols will not\r\nenable non-binary blocking.\r\n\r\nFixes Issue #13"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/18",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
@@ -1649,10 +1700,7 @@
       "patch_url": "https://github.com/capport-wg/architecture/pull/18.patch"
     },
     "body": "Fixes Issue #12"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/capport-wg/architecture/issues/17",
     "repository_url": "https://api.github.com/repos/capport-wg/architecture",
